@@ -1,0 +1,68 @@
+{
+  "id": "prim-6-mate-u2",
+  "titulo": "Operaciones con fracciones",
+  "materia": "matematicas",
+  "grado": 6,
+  "nivel": "primaria",
+  "objetivo": "Resolver sumas, restas, multiplicaciones y divisiones con fracciones en situaciones cotidianas",
+  "lecciones": [
+    {
+      "id": "l1",
+      "titulo": "Sumar y restar fracciones",
+      "orden": 1,
+      "video": "media/prim-6-mate-u2-l1.mp4",
+      "duracionSeg": 270,
+      "guionDocente": "docs/contenido/prim-6-mate-u2-l1.md",
+      "autor": "Profa. Ana López",
+      "validadoPor": "Coord. Académica",
+      "texto": "En la comunidad, doña Rosa reparte un pan en 8 partes iguales. Si su familia come 3/8 y luego 2/8, en total comieron 5/8: cuando las partes son del mismo tamaño, solo sumamos los numeradores. Para restar pasa lo mismo: 7/8 menos 4/8 es 3/8. Si los denominadores son distintos, primero buscamos fracciones equivalentes con el mismo denominador. Por ejemplo, 1/2 más 1/4 se convierte en 2/4 más 1/4, que da 3/4. Así las cuentas representan siempre la misma cantidad.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "Doña Rosa comió 3/8 de pan y después 2/8. ¿Cuánto comió en total?",
+          "opciones": ["5/8", "5/16", "6/8", "1/8"],
+          "correcta": 0,
+          "explicacion": "Los denominadores son iguales, así que se suman los numeradores: 3 + 2 = 5, y se conserva el 8."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuánto es 1/2 más 1/4?",
+          "opciones": ["2/6", "3/4", "1/6", "2/4"],
+          "correcta": 1,
+          "explicacion": "1/2 equivale a 2/4; entonces 2/4 + 1/4 = 3/4."
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "titulo": "Multiplicar y dividir fracciones",
+      "orden": 2,
+      "video": "media/prim-6-mate-u2-l2.mp4",
+      "duracionSeg": 300,
+      "guionDocente": "docs/contenido/prim-6-mate-u2-l2.md",
+      "autor": "Profa. Ana López",
+      "validadoPor": "Coord. Académica",
+      "texto": "En la feria de la comunidad, una tabla de madera mide 3/4 de metro. Para saber cuánto mide la mitad de ese pedazo multiplicamos 3/4 por 1/2: el resultado es 3/8 de metro. Al multiplicar fracciones se multiplica numerador por numerador y denominador por denominador. Para dividir, por ejemplo 1/2 entre 1/4, preguntamos cuántas veces cabe 1/4 en 1/2; caben 2. Dividir entre una fracción es como multiplicar por su inversa. Practicar con medidas de telas, madera o cosechas ayuda a entenderlo.",
+      "ejercicios": [
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "Una tabla mide 3/4 de metro. ¿Cuánto mide la mitad de la tabla?",
+          "opciones": ["3/8", "4/6", "3/6", "1/8"],
+          "correcta": 0,
+          "explicacion": "La mitad se calcula multiplicando por 1/2: 3/4 × 1/2 = 3/8."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuántas veces cabe 1/4 en 1/2?",
+          "opciones": ["2", "1/8", "1/2", "4"],
+          "correcta": 0,
+          "explicacion": "1/2 ÷ 1/4 = 2, porque dos cuartos forman un medio."
+        }
+      ]
+    }
+  ]
+}

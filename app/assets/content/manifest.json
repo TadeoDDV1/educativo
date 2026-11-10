@@ -11,6 +11,61 @@
       "tamanoKb": 480,
       "idioma": "es",
       "version": 1
+    },
+    {
+      "id": "prim-6-espa-u1",
+      "grado": 6,
+      "nivel": "primaria",
+      "materia": "espanol",
+      "titulo": "Leer y contar historias",
+      "archivo": "assets/content/prim-6-espa-u1.json",
+      "tamanoKb": 420,
+      "idioma": "es",
+      "version": 1
+    },
+    {
+      "id": "prim-6-cien-u1",
+      "grado": 6,
+      "nivel": "primaria",
+      "materia": "ciencias",
+      "titulo": "El agua y su ciclo",
+      "archivo": "assets/content/prim-6-cien-u1.json",
+      "tamanoKb": 450,
+      "idioma": "es",
+      "version": 1
+    },
+    {
+      "id": "prim-6-mate-u2",
+      "grado": 6,
+      "nivel": "primaria",
+      "materia": "matematicas",
+      "titulo": "Operaciones con fracciones",
+      "archivo": "assets/content/prim-6-mate-u2.json",
+      "tamanoKb": 460,
+      "idioma": "es",
+      "version": 1
+    },
+    {
+      "id": "prim-6-espa-u2",
+      "grado": 6,
+      "nivel": "primaria",
+      "materia": "espanol",
+      "titulo": "Describir y narrar",
+      "archivo": "assets/content/prim-6-espa-u2.json",
+      "tamanoKb": 450,
+      "idioma": "es",
+      "version": 1
+    },
+    {
+      "id": "prim-6-cien-u2",
+      "grado": 6,
+      "nivel": "primaria",
+      "materia": "ciencias",
+      "titulo": "Seres vivos y ecosistemas",
+      "archivo": "assets/content/prim-6-cien-u2.json",
+      "tamanoKb": 460,
+      "idioma": "es",
+      "version": 1
     }
   ]
 }

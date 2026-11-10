@@ -1,0 +1,78 @@
+{
+  "id": "prim-6-espa-u1",
+  "titulo": "Leer y contar historias",
+  "materia": "espanol",
+  "grado": 6,
+  "nivel": "primaria",
+  "objetivo": "Identificar las partes de un cuento y escribir uno breve",
+  "lecciones": [
+    {
+      "id": "l1",
+      "titulo": "Inicio, desarrollo y final",
+      "orden": 1,
+      "video": "media/prim-6-espa-u1-l1.mp4",
+      "duracionSeg": 270,
+      "guionDocente": "docs/contenido/prim-6-espa-u1-l1.md",
+      "autor": "Profr. Luis Ramírez",
+      "validadoPor": "Coord. Académica",
+      "texto": "Todo cuento tiene tres partes. El inicio presenta a los personajes y el lugar. El desarrollo cuenta el problema o reto. El final resuelve la historia. Reconocer estas partes te ayuda a comprender mejor lo que lees y a escribir tus propios cuentos.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿En qué parte del cuento se presentan los personajes?",
+          "opciones": ["Inicio", "Desarrollo", "Final", "Título"],
+          "correcta": 0,
+          "explicacion": "El inicio sitúa a los personajes y el lugar donde ocurre la historia."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué parte resuelve el problema de la historia?",
+          "opciones": ["El inicio", "El desarrollo", "El final", "La portada"],
+          "correcta": 2,
+          "explicacion": "El final cierra la historia y resuelve el conflicto."
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "titulo": "Escribir un cuento corto",
+      "orden": 2,
+      "video": "media/prim-6-espa-u1-l2.mp4",
+      "duracionSeg": 300,
+      "guionDocente": "docs/contenido/prim-6-espa-u1-l2.md",
+      "autor": "Profr. Luis Ramírez",
+      "validadoPor": "Coord. Académica",
+      "texto": "Para escribir un cuento corto elige un personaje, un lugar y un problema. Después escribe cómo se resuelve. Usa frases claras y revisa que tenga inicio, desarrollo y final. Puedes inspirarte en leyendas o historias de tu comunidad.",
+      "ejercicios": [
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el mejor primer paso para escribir un cuento?",
+          "opciones": [
+            "Elegir personaje, lugar y problema",
+            "Copiar otro cuento",
+            "Escribir el final primero",
+            "Contar las palabras"
+          ],
+          "correcta": 0,
+          "explicacion": "Antes de escribir necesitas saber quién, dónde y qué problema enfrenta."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué hace que un cuento se entienda mejor?",
+          "opciones": [
+            "Frases claras y ordenadas",
+            "Muchas palabras difíciles",
+            "Cambiar de tema a cada rato",
+            "No revisar lo escrito"
+          ],
+          "correcta": 0,
+          "explicacion": "Las frases claras y el orden permiten que el lector siga la historia."
+        }
+      ]
+    }
+  ]
+}

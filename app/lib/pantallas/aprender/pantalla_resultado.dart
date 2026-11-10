@@ -31,6 +31,7 @@ class _PantallaResultadoState extends State<PantallaResultado> {
         titulo: widget.leccion.titulo,
         aciertos: widget.aciertos,
         total: widget.total,
+        actualizadoEn: DateTime.now(),
       ),
     );
   }

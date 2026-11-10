@@ -16,21 +16,25 @@ Dueño: **Sección A**. Consumidores: **Sección B** (JSON de contenido) y **Sec
 
 ## Interfaz de repositorios (lo que A debe respetar)
 
-Los repositorios actuales son la referencia; A los implementa con SQLite sin
-cambiar la firma:
-
 ```dart
 // RepositorioContenido
 Future<List<Unidad>> cargarUnidades();
 Future<Unidad> cargarUnidad(PaqueteContenido paquete);
 
-// RepositorioProgreso
+// RepositorioProgreso (interfaz; hay versión en memoria y en SQLite)
 ValueListenable<Map<String, ProgresoLeccion>> get escuchar;
+Future<void> iniciar();          // carga lo guardado al abrir la app
 ProgresoLeccion? buscar(String leccionId);
 bool estaCompletada(String leccionId);
-void guardar(ProgresoLeccion progreso);
-void borrarTodo();
+Future<void> guardar(ProgresoLeccion progreso);
+Future<void> borrarTodo();
+int get aciertosTotales;
+int get preguntasTotales;
+int get racha;
 ```
+
+`ProgresoSqlite` agrega dos métodos para la sincronización:
+`pendientesDeSincronizar()` y `marcarSincronizadas(List<String>)`.
 
 ## Esquema SQLite (v1)
 

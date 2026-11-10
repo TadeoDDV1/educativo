@@ -1,0 +1,73 @@
+{
+  "id": "prim-6-espa-u2",
+  "titulo": "Describir y narrar",
+  "materia": "espanol",
+  "grado": 6,
+  "nivel": "primaria",
+  "objetivo": "Describir lugares y personas, y narrar hechos de la comunidad con orden y claridad",
+  "lecciones": [
+    {
+      "id": "l1",
+      "titulo": "Describir con los cinco sentidos",
+      "orden": 1,
+      "video": "media/prim-6-espa-u2-l1.mp4",
+      "duracionSeg": 240,
+      "guionDocente": "docs/contenido/prim-6-espa-u2-l1.md",
+      "autor": "Profr. Luis Ramírez",
+      "validadoPor": "Coord. Académica",
+      "texto": "Describir es contar cómo es algo, con detalle y orden. Usamos los cinco sentidos: cómo se ve, suena, huele, sabe y se siente. En el mercado del pueblo podemos describir un manojo de cilantro: verde, de olor fuerte, con hojas pequeñas y tallos delgados. También describimos personas y lugares. Conviene ir de lo general a lo particular y usar comparaciones sencillas: la miel es espesa como el atole. Una buena descripción permite que quien lee imagine lo que nosotros vimos.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "Al describir el olor del pan recién hecho, ¿qué sentido usas?",
+          "opciones": ["El olfato", "La vista", "El oído", "El gusto"],
+          "correcta": 0,
+          "explicacion": "El olfato percibe los olores; por eso describe cómo huele el pan."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál descripción está mejor ordenada, de lo general a lo particular?",
+          "opciones": [
+            "La casa es grande; tiene paredes blancas y un portón de madera.",
+            "Un portón de madera, paredes blancas y grande la casa es.",
+            "Blanco, madera, casa, grande, portón.",
+            "La casa es bonita y ya."
+          ],
+          "correcta": 0,
+          "explicacion": "Primero se presenta el conjunto (la casa) y luego los detalles (paredes y portón)."
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "titulo": "Narrar un hecho de mi comunidad",
+      "orden": 2,
+      "video": "media/prim-6-espa-u2-l2.mp4",
+      "duracionSeg": 300,
+      "guionDocente": "docs/contenido/prim-6-espa-u2-l2.md",
+      "autor": "Profr. Luis Ramírez",
+      "validadoPor": "Coord. Académica",
+      "texto": "Narrar es contar hechos que ocurren en el tiempo. Una narración tiene inicio, desarrollo y final, y responde a qué pasó, quién lo hizo, dónde y cuándo. En mi comunidad puedo narrar la faena del camino: primero nos reunimos, luego repartimos herramientas y al final compartimos la comida. Los verbos en pasado ayudan a ordenar los hechos, y palabras como primero, después y finalmente guían al lector. Narrar conserva la memoria de nuestro pueblo.",
+      "ejercicios": [
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué palabra ayuda a ordenar los hechos de una narración?",
+          "opciones": ["Después", "Quizás", "Muy", "Verde"],
+          "correcta": 0,
+          "explicacion": "Después es un conector temporal que indica el orden de los hechos."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿En qué tiempo verbal se narran hechos que ya ocurrieron?",
+          "opciones": ["En pasado", "En futuro", "En infinitivo", "En imperativo"],
+          "correcta": 0,
+          "explicacion": "El pasado o pretérito sitúa los hechos antes del momento en que se cuentan."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "prim-6-cien-u2",
+  "titulo": "Seres vivos y ecosistemas",
+  "materia": "ciencias",
+  "grado": 6,
+  "nivel": "primaria",
+  "objetivo": "Reconocer las características de los seres vivos y las relaciones que forman los ecosistemas",
+  "lecciones": [
+    {
+      "id": "l1",
+      "titulo": "Los seres vivos y su ambiente",
+      "orden": 1,
+      "video": "media/prim-6-cien-u2-l1.mp4",
+      "duracionSeg": 300,
+      "guionDocente": "docs/contenido/prim-6-cien-u2-l1.md",
+      "autor": "Profa. María Chuc",
+      "validadoPor": "Coord. Académica",
+      "texto": "Los seres vivos nacen, crecen, se reproducen y mueren. Necesitan agua, aire, alimento y un lugar donde vivir. En un ecosistema, plantas, animales y microorganismos se relacionan entre sí y con el suelo, el agua y el clima. Las plantas producen su alimento con la luz del sol; los animales herbívoros comen plantas y los carnívoros comen otros animales. Toda esta red de relaciones mantiene el equilibrio. Si una parte cambia, las demás también se ven afectadas.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué necesitan todos los seres vivos para vivir?",
+          "opciones": ["Agua, aire y alimento", "Solo luz", "Solo tierra", "Nada especial"],
+          "correcta": 0,
+          "explicacion": "El agua, el aire y el alimento son necesidades básicas de todo ser vivo."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué son los animales herbívoros?",
+          "opciones": ["Los que comen plantas", "Los que comen carne", "Los que comen piedras", "Los que no comen"],
+          "correcta": 0,
+          "explicacion": "Herbívoro significa que se alimenta de plantas, como la vaca o el conejo."
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "titulo": "Ecosistemas de mi región y su cuidado",
+      "orden": 2,
+      "video": "media/prim-6-cien-u2-l2.mp4",
+      "duracionSeg": 240,
+      "guionDocente": "docs/contenido/prim-6-cien-u2-l2.md",
+      "autor": "Profa. María Chuc",
+      "validadoPor": "Coord. Académica",
+      "texto": "Un ecosistema es un conjunto de seres vivos que comparten un lugar. En mi región puede haber bosques, milpas, ríos y lagunas. Cada uno tiene sus propias plantas y animales. Los ecosistemas nos dan alimentos, agua limpia, madera y aire. Cuando talamos de más, tiramos basura o contaminamos el río, rompemos ese equilibrio. Cuidarlos es tarea de toda la comunidad: sembrar árboles, separar la basura y respetar las vedas de pesca y caza ayudan a conservarlos.",
+      "ejercicios": [
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es un ejemplo de ecosistema?",
+          "opciones": [
+            "Una laguna con sus plantas y animales",
+            "Una silla de madera",
+            "Una computadora",
+            "Un cuaderno"
+          ],
+          "correcta": 0,
+          "explicacion": "Un ecosistema reúne seres vivos y el ambiente donde se relacionan."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué acción ayuda a conservar el ecosistema de la comunidad?",
+          "opciones": [
+            "Sembrar árboles nativos",
+            "Quemar el bosque",
+            "Tirar basura al río",
+            "Cazar sin control"
+          ],
+          "correcta": 0,
+          "explicacion": "Sembrar árboles nativos recupera el hábitat y protege el suelo y el agua."
+        }
+      ]
+    }
+  ]
+}

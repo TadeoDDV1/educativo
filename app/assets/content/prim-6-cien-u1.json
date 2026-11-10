@@ -1,0 +1,88 @@
+{
+  "id": "prim-6-cien-u1",
+  "titulo": "El agua y su ciclo",
+  "materia": "ciencias",
+  "grado": 6,
+  "nivel": "primaria",
+  "objetivo": "Explicar el ciclo del agua y proponer acciones para cuidarla",
+  "lecciones": [
+    {
+      "id": "l1",
+      "titulo": "El ciclo del agua",
+      "orden": 1,
+      "video": "media/prim-6-cien-u1-l1.mp4",
+      "duracionSeg": 300,
+      "guionDocente": "docs/contenido/prim-6-cien-u1-l1.md",
+      "autor": "Profa. María Chuc",
+      "validadoPor": "Coord. Académica",
+      "texto": "El agua cambia de lugar y de forma constantemente. El sol calienta el agua de ríos, lagos y mares: se evapora y sube como vapor. Al enfriarse forma nubes y cae como lluvia, nieve o granizo. Ese recorrido se llama ciclo del agua.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué provoca que el agua se evapore?",
+          "opciones": [
+            "El calor del sol",
+            "El viento frío",
+            "La lluvia",
+            "Las nubes"
+          ],
+          "correcta": 0,
+          "explicacion": "El sol calienta el agua y la convierte en vapor."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué ocurre cuando el vapor de agua se enfría?",
+          "opciones": [
+            "Forma nubes y puede llover",
+            "Desaparece para siempre",
+            "Se convierte en tierra",
+            "Se vuelve sal"
+          ],
+          "correcta": 0,
+          "explicacion": "Al enfriarse, el vapor se condensa en gotas que forman nubes."
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "titulo": "Cuidar el agua en mi comunidad",
+      "orden": 2,
+      "video": "media/prim-6-cien-u1-l2.mp4",
+      "duracionSeg": 240,
+      "guionDocente": "docs/contenido/prim-6-cien-u1-l2.md",
+      "autor": "Profa. María Chuc",
+      "validadoPor": "Coord. Académica",
+      "texto": "El agua dulce es limitada. Podemos cuidarla cerrando las llaves, reparando fugas, recolectando agua de lluvia y evitando contaminar ríos y manantiales. En muchas comunidades estos cuidados se organizan en asamblea y entre todas las familias.",
+      "ejercicios": [
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál acción ayuda a cuidar el agua?",
+          "opciones": [
+            "Reparar una fuga",
+            "Dejar la llave abierta",
+            "Tirar basura al río",
+            "Lavar el patio a diario con manguera"
+          ],
+          "correcta": 0,
+          "explicacion": "Una fuga reparada evita que se pierda agua todos los días."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Por qué es importante el agua de lluvia en comunidades sin red de agua?",
+          "opciones": [
+            "Se puede recolectar y almacenar",
+            "No sirve para nada",
+            "Solo sirve para regar flores",
+            "Contamina el suelo"
+          ],
+          "correcta": 0,
+          "explicacion": "La captación de lluvia permite tener agua disponible en temporada seca."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel docente · SaberMóvil</title>
+  <style>
+    :root {
+      --verde: #1F7A5C;
+      --verde-oscuro: #155C45;
+      --ambar: #F2A93B;
+      --tinta: #1D2B28;
+      --gris: #5B6B66;
+      --fondo: #F4F7F5;
+      --blanco: #FFFFFF;
+      --borde: #DCE6E1;
+      --alerta: #B45309;
+      --alerta-fondo: #FEF3C7;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--fondo);
+      color: var(--tinta);
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.45;
+    }
+
+    .contenedor {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 32px 24px 56px;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 4px solid var(--verde);
+      padding-bottom: 18px;
+      margin-bottom: 28px;
+    }
+
+    .marca {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: var(--verde);
+      color: var(--blanco);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 24px;
+      flex: 0 0 auto;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitulo {
+      margin: 2px 0 0;
+      color: var(--gris);
+      font-size: 1rem;
+    }
+
+    .acciones {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    #actualizado {
+      color: var(--gris);
+      font-size: 0.95rem;
+    }
+
+    button {
+      font: inherit;
+      font-weight: 600;
+      color: var(--blanco);
+      background: var(--verde);
+      border: 0;
+      border-radius: 999px;
+      padding: 12px 26px;
+      cursor: pointer;
+      transition: background 0.15s ease, transform 0.1s ease;
+    }
+
+    button:hover { background: var(--verde-oscuro); }
+    button:active { transform: translateY(1px); }
+    button:focus-visible {
+      outline: 3px solid var(--ambar);
+      outline-offset: 3px;
+    }
+    button:disabled {
+      background: #8FA9A0;
+      cursor: progress;
+    }
+
+    .aviso {
+      display: none;
+      background: var(--alerta-fondo);
+      color: var(--alerta);
+      border: 1px solid #F5D48A;
+      border-left: 8px solid var(--ambar);
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+
+    .aviso.visible { display: block; }
+
+    .tarjetas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      margin-bottom: 34px;
+    }
+
+    .tarjeta {
+      background: var(--blanco);
+      border: 1px solid var(--borde);
+      border-radius: 16px;
+      padding: 22px 24px;
+      box-shadow: 0 2px 8px rgba(29, 43, 40, 0.05);
+    }
+
+    .tarjeta .etiqueta {
+      color: var(--gris);
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin: 0 0 8px;
+    }
+
+    .tarjeta .valor {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1;
+      margin: 0;
+      color: var(--verde);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .tarjeta.destacada { border-top: 6px solid var(--ambar); }
+    .tarjeta.destacada .valor { color: var(--tinta); }
+    .tarjeta .detalle {
+      margin: 10px 0 0;
+      color: var(--gris);
+      font-size: 0.95rem;
+    }
+
+    section h2 {
+      font-size: 1.25rem;
+      margin: 0 0 14px;
+    }
+
+    .tabla-caja {
+      background: var(--blanco);
+      border: 1px solid var(--borde);
+      border-radius: 16px;
+      overflow-x: auto;
+      box-shadow: 0 2px 8px rgba(29, 43, 40, 0.05);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 760px;
+    }
+
+    thead th {
+      background: var(--verde);
+      color: var(--blanco);
+      text-align: left;
+      font-size: 0.95rem;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      padding: 15px 18px;
+      white-space: nowrap;
+    }
+
+    tbody td {
+      padding: 15px 18px;
+      border-bottom: 1px solid var(--borde);
+      font-variant-numeric: tabular-nums;
+    }
+
+    tbody tr:last-child td { border-bottom: 0; }
+    tbody tr:nth-child(even) { background: #FAFCFB; }
+
+    .nombre { font-weight: 700; }
+
+    .nivel {
+      text-transform: capitalize;
+      color: var(--gris);
+    }
+
+    .porcentaje { font-weight: 700; }
+
+    .pct-alto { color: var(--verde); }
+    .pct-medio { color: #8A5A00; }
+    .pct-bajo { color: var(--alerta); }
+
+    .vacio {
+      display: none;
+      background: var(--blanco);
+      border: 2px dashed var(--borde);
+      border-radius: 16px;
+      padding: 56px 24px;
+      text-align: center;
+      color: var(--gris);
+    }
+
+    .vacio.visible { display: block; }
+
+    .vacio strong {
+      display: block;
+      color: var(--tinta);
+      font-size: 1.35rem;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      margin-top: 32px;
+      color: var(--gris);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .contenedor { padding: 20px 14px 40px; }
+      h1 { font-size: 1.5rem; }
+      .tarjeta .valor { font-size: 2.4rem; }
+      #actualizado { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <header>
+      <div class="marca">
+        <div class="logo" aria-hidden="true">SM</div>
+        <div>
+          <h1>Panel docente · SaberMóvil</h1>
+          <p class="subtitulo">Avance del grupo · datos locales del servidor escolar</p>
+        </div>
+      </div>
+      <div class="acciones">
+        <span id="actualizado">Cargando…</span>
+        <button id="botonActualizar" type="button">Actualizar</button>
+      </div>
+    </header>
+
+    <div id="aviso" class="aviso" role="status" aria-live="polite">
+      No se pudo conectar con el servidor. Se reintentará automáticamente.
+    </div>
+
+    <div class="tarjetas">
+      <div class="tarjeta">
+        <p class="etiqueta">Estudiantes</p>
+        <p class="valor" id="totalEstudiantes">—</p>
+        <p class="detalle">Registrados en este servidor</p>
+      </div>
+      <div class="tarjeta destacada">
+        <p class="etiqueta">Lecciones completadas</p>
+        <p class="valor" id="totalLecciones">—</p>
+        <p class="detalle">Avances guardadas en total</p>
+      </div>
+      <div class="tarjeta">
+        <p class="etiqueta">Acierto promedio</p>
+        <p class="valor" id="promedioAcierto">—</p>
+        <p class="detalle">Sobre todas las preguntas respondidas</p>
+      </div>
+    </div>
+
+    <section aria-labelledby="tituloEstudiantes">
+      <h2 id="tituloEstudiantes">Estudiantes</h2>
+
+      <div id="estadoVacio" class="vacio" role="status">
+        <strong>Todavía no hay datos</strong>
+        Cuando el primer estudiante complete una lección y se sincronice,
+        su avance aparecerá aquí.
+      </div>
+
+      <div id="cajaTabla" class="tabla-caja">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Nombre</th>
+              <th scope="col">Grado</th>
+              <th scope="col">Nivel</th>
+              <th scope="col">Lecciones</th>
+              <th scope="col">Aciertos</th>
+              <th scope="col">% de acierto</th>
+            </tr>
+          </thead>
+          <tbody id="cuerpoTabla"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      SaberMóvil · Se actualiza automáticamente cada 10 segundos ·
+      Los datos se guardan solo en este servidor.
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var INTERVALO_MS = 10000;
+      var boton = document.getElementById("botonActualizar");
+      var aviso = document.getElementById("aviso");
+      var actualizado = document.getElementById("actualizado");
+      var cuerpoTabla = document.getElementById("cuerpoTabla");
+      var estadoVacio = document.getElementById("estadoVacio");
+      var cajaTabla = document.getElementById("cajaTabla");
+      var totalEstudiantes = document.getElementById("totalEstudiantes");
+      var totalLecciones = document.getElementById("totalLecciones");
+      var promedioAcierto = document.getElementById("promedioAcierto");
+
+      var cargando = false;
+
+      function porcentaje(aciertos, preguntas) {
+        if (!preguntas || preguntas <= 0) { return 0; }
+        return Math.round((aciertos / preguntas) * 100);
+      }
+
+      function clasePorcentaje(pct) {
+        if (pct >= 80) { return "pct-alto"; }
+        if (pct >= 60) { return "pct-medio"; }
+        return "pct-bajo";
+      }
+
+      function celda(texto, clase) {
+        var td = document.createElement("td");
+        td.textContent = texto;
+        if (clase) { td.className = clase; }
+        return td;
+      }
+
+      function pintarTabla(estudiantes) {
+        cuerpoTabla.textContent = "";
+
+        var hayDatos = estudiantes.length > 0;
+        estadoVacio.classList.toggle("visible", !hayDatos);
+        cajaTabla.style.display = hayDatos ? "" : "none";
+
+        for (var i = 0; i < estudiantes.length; i += 1) {
+          var estudiante = estudiantes[i];
+          var pct = porcentaje(estudiante.aciertos, estudiante.preguntas);
+          var fila = document.createElement("tr");
+
+          fila.appendChild(celda(estudiante.nombre || "Sin nombre", "nombre"));
+          fila.appendChild(celda(String(estudiante.grado) + "º"));
+          fila.appendChild(celda(estudiante.nivel || "—", "nivel"));
+          fila.appendChild(celda(String(estudiante.lecciones)));
+          fila.appendChild(celda(String(estudiante.aciertos)));
+          fila.appendChild(
+            celda(String(pct) + " %", "porcentaje " + clasePorcentaje(pct))
+          );
+
+          cuerpoTabla.appendChild(fila);
+        }
+
+        var sumAciertos = 0;
+        var sumPreguntas = 0;
+        for (var j = 0; j < estudiantes.length; j += 1) {
+          sumAciertos += estudiantes[j].aciertos || 0;
+          sumPreguntas += estudiantes[j].preguntas || 0;
+        }
+        var promedio = porcentaje(sumAciertos, sumPreguntas);
+        promedioAcierto.textContent = sumPreguntas > 0 ? promedio + " %" : "—";
+      }
+
+      function pintarResumen(resumen) {
+        totalEstudiantes.textContent = String(resumen.estudiantes || 0);
+        totalLecciones.textContent = String(resumen.leccionesCompletadas || 0);
+      }
+
+      function leerJson(ruta) {
+        return fetch(ruta, {
+          headers: { Accept: "application/json" },
+          cache: "no-store"
+        }).then(function (respuesta) {
+          if (!respuesta.ok) {
+            throw new Error("Respuesta " + respuesta.status + " en " + ruta);
+          }
+          return respuesta.json();
+        });
+      }
+
+      function mostrarError() {
+        aviso.classList.add("visible");
+        actualizado.textContent = "Sin conexión con el servidor";
+      }
+
+      function actualizar() {
+        if (cargando) { return; }
+        cargando = true;
+        boton.disabled = true;
+        boton.textContent = "Actualizando…";
+
+        Promise.all([
+          leerJson("/docente/resumen"),
+          leerJson("/docente/estudiantes")
+        ]).then(function (resultados) {
+          pintarResumen(resultados[0]);
+          pintarTabla(resultados[1]);
+          aviso.classList.remove("visible");
+          actualizado.textContent =
+            "Actualizado a las " +
+            new Date().toLocaleTimeString("es-MX", {
+              hour: "2-digit",
+              minute: "2-digit",
+              second: "2-digit"
+            });
+        }).catch(function (error) {
+          mostrarError();
+          if (window.console && window.console.error) {
+            window.console.error(error);
+          }
+        }).finally(function () {
+          cargando = false;
+          boton.disabled = false;
+          boton.textContent = "Actualizar";
+        });
+      }
+
+      boton.addEventListener("click", actualizar);
+      actualizar();
+      window.setInterval(actualizar, INTERVALO_MS);
+    }());
+  </script>
+</body>
+</html>

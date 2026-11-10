@@ -9,10 +9,19 @@ Plataforma educativa gamificada, offline-first y bilingüe para primaria, secund
 
 ## Estado actual (arranque)
 
-Ya está funcionando y con tests: shell de 3 pestañas, ruta de aprendizaje con
-desbloqueo secuencial, lección con ejercicios y retroalimentación, resultado con
-guardado, pantalla de progreso, perfil, aviso de "sin conexión" y una unidad real
-de ejemplo (`prim-6-mate-u1`). Falta lo que está marcado en cada sección.
+Ya está funcionando y con tests: shell de 3 pestañas, onboarding en dos pasos con
+perfil guardado, ruta de aprendizaje con desbloqueo secuencial, lección con
+ejercicios y retroalimentación, resultado con guardado, pantalla de progreso con
+racha e insignias, perfil con sincronización, aviso de "sin conexión",
+**persistencia SQLite** del avance, servicio de sincronización con la API,
+**6 unidades** de contenido y backend con panel docente.
+
+| Sección | Avance | Falta |
+|---|---|---|
+| A — Datos | ~85 % | descarga de unidades a disco y reintentos de sincronización |
+| B — Contenido | ~75 % | videos, glosario bilingüe y fichas de validación |
+| C — UI | ~80 % | reproductor de video real y pruebas de accesibilidad |
+| D — Backend | ~90 % | autenticación real con JWT y despliegue |
 
 ---
 
@@ -34,9 +43,10 @@ app/
 │   │   └── tema/tema_app.dart
 │   ├── datos/                     # Sección A
 │   │   ├── modelos/               # contratos compartidos (A define, B y C usan)
-│   │   ├── repositorios/          # contenido y progreso
-│   │   ├── base_datos/            # esquema, migraciones, DAOs (A)
-│   │   └── sincronizacion/        # cola de envío (A)
+│   │   ├── repositorios/          # contenido, progreso (memoria y SQLite)
+│   │   ├── base_datos/            # esquema, migraciones (A)
+│   │   ├── descargas/             # descarga de unidades a disco (A)
+│   │   └── sincronizacion/        # envío del avance pendiente (A)
 │   ├── logica/                    # Sección C (controladores, reglas del juego)
 │   ├── pantallas/                 # Sección C, una carpeta por pantalla
 │   │   ├── inicio/

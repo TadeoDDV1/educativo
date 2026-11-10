@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../datos/modelos/modelos.dart';
+import '../../logica/insignias.dart';
 import '../../nucleo/servicios.dart';
 
 /// Muestra el avance guardado en el dispositivo.
@@ -31,11 +32,25 @@ class PantallaProgreso extends StatelessWidget {
         final aciertos = progreso.aciertosTotales;
         final total = progreso.preguntasTotales;
         final porcentaje = total == 0 ? 0 : aciertos * 100 ~/ total;
+        final insignias = calcularInsignias(
+          progresos: datos.values,
+          racha: progreso.racha,
+        );
 
         return ListView(
           padding: const EdgeInsets.all(16),
           children: [
-            Text('Mi progreso', style: tema.textTheme.headlineSmall),
+            Row(
+              children: [
+                Expanded(
+                  child: Text('Mi progreso', style: tema.textTheme.headlineSmall),
+                ),
+                Chip(
+                  avatar: const Text('🔥'),
+                  label: Text('${progreso.racha} días'),
+                ),
+              ],
+            ),
             const SizedBox(height: 16),
             Row(
               children: [
@@ -65,6 +80,26 @@ class PantallaProgreso extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 24),
+            Text('Mis insignias', style: tema.textTheme.titleMedium),
+            const SizedBox(height: 8),
+            if (insignias.isEmpty)
+              const Text('Completa lecciones para ganar tu primera insignia.')
+            else
+              Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: [
+                  for (final insignia in insignias)
+                    Tooltip(
+                      message: insignia.descripcion,
+                      child: Chip(
+                        avatar: Text(insignia.emoji),
+                        label: Text(insignia.titulo),
+                      ),
+                    ),
+                ],
+              ),
+            const SizedBox(height: 24),
             Text('Lecciones completadas', style: tema.textTheme.titleMedium),
             const SizedBox(height: 8),
             for (final item in datos.values)
@@ -76,9 +111,12 @@ class PantallaProgreso extends StatelessWidget {
                   subtitle: Text(
                     '${item.aciertos} de ${item.total} · ${item.calificacion} %',
                   ),
-                  trailing: LinearProgressIndicator(
-                    value: item.total == 0 ? 0 : item.aciertos / item.total,
-                    minHeight: 6,
+                  trailing: SizedBox(
+                    width: 60,
+                    child: LinearProgressIndicator(
+                      value: item.total == 0 ? 0 : item.aciertos / item.total,
+                      minHeight: 6,
+                    ),
                   ),
                 ),
               ),

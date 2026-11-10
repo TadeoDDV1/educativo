@@ -12,3 +12,10 @@ app/assets/content/media/*.wav
 # Entorno
 .env
 *.log
+
+# Backend Python
+server/.venv/
+server/__pycache__/
+server/**/__pycache__/
+server/datos.db
+.pytest_cache/

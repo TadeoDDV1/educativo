@@ -46,9 +46,11 @@ lib/
 │   │   └── usuario.dart
 │   ├── repositorios/
 │   │   ├── repositorio_contenido.dart   # lee los JSON de assets
-│   │   └── repositorio_progreso.dart    # guarda el avance
-│   ├── base_datos/              # (Sección A) SQLite va aquí
-│   └── sincronizacion/          # (Sección A) cola de envío
+│   │   ├── repositorio_progreso.dart    # interfaz + versión en memoria
+│   │   └── repositorio_progreso_sqlite.dart  # guarda en SQLite
+│   ├── base_datos/              # (Sección A) apertura y esquema SQLite
+│   ├── descargas/               # (Sección A) unidades descargadas a disco
+│   └── sincronizacion/          # (Sección A) envío del avance pendiente
 ├── logica/                      # CAPA DE LÓGICA
 │   └── controlador_leccion.dart # estado de una lección
 ├── pantallas/                   # CAPA DE PANTALLAS
@@ -117,9 +119,15 @@ Si el proyecto crece mucho, se puede migrar a provider sin reescribir los datos.
 
 ## Dónde entra SQLite (Sección A)
 
-`RepositorioProgreso` tiene hoy un `Map` en memoria. La Sección A lo cambia por
-SQLite **manteniendo los mismos métodos** (`guardar`, `buscar`, `borrarTodo`,
-`escuchar`). Las pantallas no se tocan: esa es la ventaja de la capa de datos.
+`RepositorioProgreso` es una interfaz con dos implementaciones:
+
+- `ProgresoMemoria` — para tests y como respaldo.
+- `ProgresoSqlite` — la que usa la app (`Servicios.instancia.progreso`).
+
+`ProgresoSqlite` actualiza la pantalla al instante y guarda en disco con
+`pendienteSync = 1`. La sincronización (`ServicioSincronizacion`) envía esos
+pendientes y los marca como sincronizados. Las pantallas no se tocan: esa es la
+ventaja de la capa de datos.
 
 Lo mismo con el contenido: `RepositorioContenido` puede pasar de leer `assets/`
 a leer de una base local y descargar unidades, sin cambiar la UI.

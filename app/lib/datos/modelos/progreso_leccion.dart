@@ -5,12 +5,14 @@ class ProgresoLeccion {
     required this.titulo,
     required this.aciertos,
     required this.total,
+    required this.actualizadoEn,
   });
 
   final String leccionId;
   final String titulo;
   final int aciertos;
   final int total;
+  final DateTime actualizadoEn;
 
   bool get completada => total > 0;
 

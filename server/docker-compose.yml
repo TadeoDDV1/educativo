@@ -1,0 +1,15 @@
+services:
+  api:
+    build: .
+    container_name: sabermovil-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../app/assets/content:/contenido:ro
+      - datos:/datos
+    environment:
+      CONTENIDO_DIR: /contenido
+      DB_PATH: /datos/datos.db
+
+volumes:
+  datos:
