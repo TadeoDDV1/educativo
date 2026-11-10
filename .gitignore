@@ -1,0 +1,14 @@
+# Flutter / Dart
+app/.dart_tool/
+app/build/
+app/.flutter-plugins*
+*.iml
+
+# Medios pesados (ver app/assets/content/media/README.md)
+app/assets/content/media/*.mp4
+app/assets/content/media/*.mp3
+app/assets/content/media/*.wav
+
+# Entorno
+.env
+*.log

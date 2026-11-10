@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "paquetes": [
+    {
+      "id": "prim-6-mate-u1",
+      "grado": 6,
+      "nivel": "primaria",
+      "materia": "matematicas",
+      "titulo": "Fracciones",
+      "archivo": "assets/content/prim-6-mate-u1.json",
+      "tamanoKb": 480,
+      "idioma": "es",
+      "version": 1
+    }
+  ]
+}
