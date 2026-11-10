@@ -11,7 +11,26 @@ Dueño: **Sección A**. Consumidores: **Sección B** (JSON de contenido) y **Sec
 
 ## Modelos Dart
 
-`app/lib/data/models/models.dart`: `Usuario`, `Unidad`, `Leccion`, `Ejercicio`, `Progreso`, `EstadoLeccion`.
+`app/lib/datos/modelos/` (barrel: `modelos.dart`): `Usuario`, `PaqueteContenido`,
+`Unidad`, `Leccion`, `Ejercicio`, `ProgresoLeccion`.
+
+## Interfaz de repositorios (lo que A debe respetar)
+
+Los repositorios actuales son la referencia; A los implementa con SQLite sin
+cambiar la firma:
+
+```dart
+// RepositorioContenido
+Future<List<Unidad>> cargarUnidades();
+Future<Unidad> cargarUnidad(PaqueteContenido paquete);
+
+// RepositorioProgreso
+ValueListenable<Map<String, ProgresoLeccion>> get escuchar;
+ProgresoLeccion? buscar(String leccionId);
+bool estaCompletada(String leccionId);
+void guardar(ProgresoLeccion progreso);
+void borrarTodo();
+```
 
 ## Esquema SQLite (v1)
 

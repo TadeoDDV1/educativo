@@ -4,40 +4,52 @@ Plataforma educativa gamificada, offline-first y bilingüe para primaria, secund
 
 - **Proyecto Flutter:** `app/` (nombre `sabermovil`, org `com.raicesdelsaber`)
 - **Stack base:** Flutter 3.44 · Dart 3.12 · SQLite (`sqflite`) · almacenamiento local de archivos · sincronización opcional
+- **Arquitectura:** 3 capas simples — `pantallas` → `logica` → `datos` (ver `app/docs/arquitectura.md`)
 - **Meta del MVP:** 1 grado (6.º de primaria) · 3 materias · 2 unidades por materia · video + ejercicios + progreso + insignias · **funciona 100 % sin internet**
+
+## Estado actual (arranque)
+
+Ya está funcionando y con tests: shell de 3 pestañas, ruta de aprendizaje con
+desbloqueo secuencial, lección con ejercicios y retroalimentación, resultado con
+guardado, pantalla de progreso, perfil, aviso de "sin conexión" y una unidad real
+de ejemplo (`prim-6-mate-u1`). Falta lo que está marcado en cada sección.
 
 ---
 
 ## 0. Reglas del juego (leer antes de escribir código)
+
+> **Arquitectura completa en `app/docs/arquitectura.md`.** Resumen: 3 capas
+> (`pantallas` → `logica` → `datos`) y todo nombrado en español.
 
 ### Estructura de carpetas
 
 ```text
 app/
 ├── lib/
-│   ├── main.dart                  # Sección C (shell de navegación)
-│   ├── core/                      # Compartido: tema, constantes, utilidades, router
-│   │   ├── theme/
-│   │   ├── constants/
-│   │   └── utils/
-│   ├── data/                      # Sección A
-│   │   ├── db/                    # esquema, migraciones, DAOs
-│   │   ├── models/                # contratos compartidos (A los define, C y B los usan)
-│   │   ├── repositories/
-│   │   └── sync/
-│   ├── content/                   # Sección B (carga y valida JSON de contenido)
-│   ├── features/                  # Sección C (una carpeta por pantalla/feature)
-│   │   ├── onboarding/
-│   │   ├── learn/                 # ruta de aprendizaje tipo Duolingo
-│   │   ├── lesson/
-│   │   ├── progress/
-│   │   └── teacher/
-│   └── widgets/                   # Componentes reutilizables (C)
+│   ├── main.dart                  # solo llama a runApp
+│   ├── app.dart                   # MaterialApp, tema y pantalla inicial (C)
+│   ├── nucleo/                    # común a todos
+│   │   ├── constantes.dart
+│   │   ├── servicios.dart         # Servicios.instancia → repositorios
+│   │   └── tema/tema_app.dart
+│   ├── datos/                     # Sección A
+│   │   ├── modelos/               # contratos compartidos (A define, B y C usan)
+│   │   ├── repositorios/          # contenido y progreso
+│   │   ├── base_datos/            # esquema, migraciones, DAOs (A)
+│   │   └── sincronizacion/        # cola de envío (A)
+│   ├── logica/                    # Sección C (controladores, reglas del juego)
+│   ├── pantallas/                 # Sección C, una carpeta por pantalla
+│   │   ├── inicio/
+│   │   ├── aprender/
+│   │   ├── progreso/
+│   │   └── perfil/
+│   └── widgets/                   # piezas visuales reutilizables (C)
 ├── assets/
-│   ├── content/                   # Sección B: JSON + videos + audios + imágenes
-│   └── images/
-├── test/                          # Todos (cada sección prueba lo suyo)
-└── docs/                          # Contratos, guías, pitch
+│   ├── content/                   # Sección B: JSON + manifest
+│   │   └── media/                 # videos y audios (no van a Git)
+│   └── images/                    # ilustraciones de los ejercicios (B)
+├── test/                          # test/logica, test/pantallas, test/datos
+└── docs/                          # arquitectura, contratos, contenido, entrega
 ```
 
 ### Flujo con Git
@@ -45,10 +57,10 @@ app/
 | Rama | Quién | Regla |
 |---|---|---|
 | `main` | Nadie directo | Solo merges de PR aprobados |
-| `feat/datos-offline` | Sección A | Solo toca `lib/data/**`, `test/data/**` |
-| `feat/contenido` | Sección B | Solo toca `assets/content/**`, `lib/content/**`, `docs/contenido/**` |
-| `feat/ui` | Sección C | Solo toca `lib/features/**`, `lib/widgets/**`, `lib/core/theme/**`, `lib/main.dart` |
-| `feat/backend-panel` | Sección D | Solo toca `server/**`, `docs/entrega/**`, `.github/**` |
+| `feat/datos-offline` | Sección A | Solo toca `lib/datos/**`, `test/datos/**` |
+| `feat/contenido` | Sección B | Solo toca `assets/content/**`, `assets/images/**`, `app/docs/contenido/**` |
+| `feat/ui` | Sección C | Solo toca `lib/pantallas/**`, `lib/widgets/**`, `lib/logica/**`, `lib/nucleo/tema/**`, `lib/app.dart` |
+| `feat/backend-panel` | Sección D | Solo toca `server/**`, `app/docs/entrega/**`, `.github/**` |
 
 **Reglas de oro**
 1. Nadie edita archivos de otra sección. Si necesitas un cambio en el contrato de datos, se pide a la Sección A y se versiona.
@@ -143,19 +155,19 @@ descarga(id TEXT PK, unidadId TEXT, estado TEXT, bytes INT, actualizadoEn INT)
 - [ ] Proyecto Flutter con dependencias agregadas y compilando en Android.
 - [ ] Esquema SQLite + migraciones versionadas + apertura de BD.
 - [ ] Modelos inmutables con `fromJson` / `toMap` (contratos congelados y documentados).
-- [ ] Repositorios: `UsuarioRepo`, `ContenidoRepo`, `ProgresoRepo`, `InsigniaRepo`.
+- [ ] Repositorios: `RepositorioUsuario`, `RepositorioContenido`, `RepositorioProgreso`, `RepositorioInsignia`.
 - [ ] Carga inicial (seed) del contenido desde `assets/content/`.
 - [ ] Servicio de descarga de unidades: copiar JSON + media a almacenamiento interno, marcar `descargada`, calcular tamaño y permitir borrar.
 - [ ] Cálculo de progreso y rachas a partir de `progreso`.
 - [ ] Cola de sincronización (`pendienteSync`) con reintentos y simulación de envío (endpoint de D o mock).
 - [ ] 15+ tests unitarios de repositorios y progreso.
 
-**Archivos que posee:** `lib/data/**`, `test/data/**`, `docs/contratos-datos.md`
+**Archivos que posee:** `lib/datos/**`, `test/datos/**`, `app/docs/contratos-datos.md`
 
 **Criterios de aceptación**
 1. Insertar 40 ejercicios, responder, cerrar la app y ver el progreso intacto.
 2. Descargar una unidad, apagar el WiFi y completarla sin errores.
-3. `flutter test` verde y cobertura de `lib/data` ≥ 60 %.
+3. `flutter test` verde y cobertura de `lib/datos` ≥ 60 %.
 
 **Dependencias sugeridas:** `sqflite`, `path`, `path_provider`, `shared_preferences`, `connectivity_plus`, `uuid`, `sqflite_common_ffi` (tests).
 
@@ -189,7 +201,7 @@ descarga(id TEXT PK, unidadId TEXT, estado TEXT, bytes INT, actualizadoEn INT)
 - [ ] Versión ligera de cada video (480p) y opción audio-only.
 - [ ] `manifest.json` completo y validado por A.
 
-**Archivos que posee:** `assets/content/**`, `lib/content/**` (solo validadores), `docs/contenido/**`
+**Archivos que posee:** `assets/content/**`, `assets/images/**`, `app/docs/contenido/**`
 
 **Criterios de aceptación**
 1. El JSON pasa el validador de A sin errores.
@@ -220,8 +232,8 @@ descarga(id TEXT PK, unidadId TEXT, estado TEXT, bytes INT, actualizadoEn INT)
 **Perfil:** 1–2 personas fuertes en Flutter/UI.
 
 **Entregables**
-- [ ] Design system: colores, tipografías, botones, tarjetas, estados vacíos y de error (`lib/core/theme/`).
-- [ ] `main.dart` con shell de navegación y ruteo (Aprender · Progreso · Perfil).
+- [ ] Design system: colores, tipografías, botones, tarjetas, estados vacíos y de error (`lib/nucleo/tema/`).
+- [ ] `app.dart` + `pantalla_inicio.dart` con las tres secciones (Aprender · Progreso · Perfil).
 - [ ] Onboarding: nivel, grado, idioma, diagnóstico corto.
 - [ ] Ruta de aprendizaje tipo Duolingo (nodos, candados, estrellas, racha).
 - [ ] Pantalla de lección: video (`video_player`), texto, ejercicio de opción múltiple, retroalimentación y explicación.
@@ -231,7 +243,7 @@ descarga(id TEXT PK, unidadId TEXT, estado TEXT, bytes INT, actualizadoEn INT)
 - [ ] Indicadores de offline ("sin conexión, tu avance se guarda").
 - [ ] Widgets reutilizables y tests de widgets de las pantallas clave.
 
-**Archivos que posee:** `lib/features/**`, `lib/widgets/**`, `lib/core/theme/**`, `lib/main.dart`, `test/features/**`
+**Archivos que posee:** `lib/pantallas/**`, `lib/widgets/**`, `lib/logica/**`, `lib/nucleo/tema/**`, `lib/app.dart`, `test/pantallas/**`
 
 **Criterios de aceptación**
 1. Flujo completo: onboarding → ruta → lección → resultados → progreso, sin tocar código de datos.
@@ -274,7 +286,7 @@ descarga(id TEXT PK, unidadId TEXT, estado TEXT, bytes INT, actualizadoEn INT)
 - [ ] Guion del pitch (5 min) + diapositivas + video de respaldo de la demo.
 - [ ] Instalador/APK firmado y publicado en Release.
 
-**Archivos que posee:** `server/**`, `docs/entrega/**`, `.github/**`, `README.md`
+**Archivos que posee:** `server/**`, `app/docs/entrega/**`, `.github/**`, `README.md`
 
 **Criterios de aceptación**
 1. `docker compose up` levanta el backend y el panel en < 2 min.
