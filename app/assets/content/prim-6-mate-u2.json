@@ -1,13 +1,23 @@
 {
   "id": "prim-6-mate-u2",
   "titulo": "Operaciones con fracciones",
-  "materia": "matematicas",
-  "grado": 6,
   "nivel": "primaria",
+  "grado": 6,
+  "fase": 5,
+  "campo": "saberes",
+  "contenido": "Suma y resta; multiplicación y división con fracciones",
+  "pda": [
+    "Resuelve problemas de suma y resta con fracciones de distinto denominador."
+  ],
+  "ejesArticuladores": [
+    "pensamiento_critico"
+  ],
   "objetivo": "Resolver sumas, restas, multiplicaciones y divisiones con fracciones en situaciones cotidianas",
+  "fuente": "Plan de Estudio 2022 · Fase 5 (pendiente de cotejar con el Programa Sintético de la Fase 5)",
+  "estadoValidacion": "borrador",
   "lecciones": [
     {
-      "id": "l1",
+      "id": "prim-6-mate-u2-l1",
       "titulo": "Sumar y restar fracciones",
       "orden": 1,
       "video": "media/prim-6-mate-u2-l1.mp4",
@@ -21,7 +31,12 @@
           "id": "e1",
           "tipo": "opcion_multiple",
           "pregunta": "Doña Rosa comió 3/8 de pan y después 2/8. ¿Cuánto comió en total?",
-          "opciones": ["5/8", "5/16", "6/8", "1/8"],
+          "opciones": [
+            "5/8",
+            "5/16",
+            "6/8",
+            "1/8"
+          ],
           "correcta": 0,
           "explicacion": "Los denominadores son iguales, así que se suman los numeradores: 3 + 2 = 5, y se conserva el 8."
         },
@@ -29,14 +44,19 @@
           "id": "e2",
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuánto es 1/2 más 1/4?",
-          "opciones": ["2/6", "3/4", "1/6", "2/4"],
+          "opciones": [
+            "2/6",
+            "3/4",
+            "1/6",
+            "2/4"
+          ],
           "correcta": 1,
           "explicacion": "1/2 equivale a 2/4; entonces 2/4 + 1/4 = 3/4."
         }
       ]
     },
     {
-      "id": "l2",
+      "id": "prim-6-mate-u2-l2",
       "titulo": "Multiplicar y dividir fracciones",
       "orden": 2,
       "video": "media/prim-6-mate-u2-l2.mp4",
@@ -50,7 +70,12 @@
           "id": "e3",
           "tipo": "opcion_multiple",
           "pregunta": "Una tabla mide 3/4 de metro. ¿Cuánto mide la mitad de la tabla?",
-          "opciones": ["3/8", "4/6", "3/6", "1/8"],
+          "opciones": [
+            "3/8",
+            "4/6",
+            "3/6",
+            "1/8"
+          ],
           "correcta": 0,
           "explicacion": "La mitad se calcula multiplicando por 1/2: 3/4 × 1/2 = 3/8."
         },
@@ -58,7 +83,12 @@
           "id": "e4",
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuántas veces cabe 1/4 en 1/2?",
-          "opciones": ["2", "1/8", "1/2", "4"],
+          "opciones": [
+            "2",
+            "1/8",
+            "1/2",
+            "4"
+          ],
           "correcta": 0,
           "explicacion": "1/2 ÷ 1/4 = 2, porque dos cuartos forman un medio."
         }

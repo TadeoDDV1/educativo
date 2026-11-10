@@ -1,0 +1,144 @@
+{
+  "id": "prim-5-huma-u1",
+  "titulo": "Mis emociones y mi proyecto de vida",
+  "nivel": "primaria",
+  "grado": 5,
+  "fase": 5,
+  "campo": "humano",
+  "contenido": "Construcción del proyecto de vida · Formas de ser, pensar, actuar y relacionarse",
+  "pda": [
+    "Reconoce sus intereses, gustos y capacidades para imaginar metas personales.",
+    "Regula sus emociones para convivir de manera respetuosa."
+  ],
+  "ejesArticuladores": [
+    "vida_saludable",
+    "igualdad_genero"
+  ],
+  "objetivo": "Conocerme, manejar mis emociones y plantear metas.",
+  "fuente": "Plan de Estudio 2022 · Fase 5 (pendiente de cotejar con el Programa Sintético de la Fase 5)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-5-huma-u1-l1",
+      "titulo": "Conozco y regulo mis emociones",
+      "orden": 1,
+      "video": null,
+      "texto": "Regular las emociones no es dejar de sentir, sino expresar lo que sentimos sin lastimar a nadie. Algunas estrategias: respirar profundo, contar hasta diez, alejarnos un momento o hablar con alguien de confianza.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "Regular las emociones significa…",
+          "opciones": [
+            "Dejar de sentir",
+            "Expresarlas sin lastimar a nadie",
+            "Gritar siempre",
+            "Esconderlas para siempre"
+          ],
+          "correcta": 1,
+          "explicacion": "Regular es expresar de forma respetuosa."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué estrategia ayuda cuando sientes mucho enojo?",
+          "opciones": [
+            "Respirar profundo",
+            "Golpear algo",
+            "Insultar",
+            "Romper cosas"
+          ],
+          "correcta": 0,
+          "explicacion": "Respirar profundo calma el cuerpo."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "Sentir miedo antes de exponer frente al grupo es…",
+          "opciones": [
+            "Normal, y se puede manejar",
+            "Raro",
+            "Señal de que no sirves",
+            "Motivo de burla"
+          ],
+          "correcta": 0,
+          "explicacion": "Es normal; prepararte y respirar ayuda."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué emoción sentimos cuando logramos una meta?",
+          "opciones": [
+            "Satisfacción o alegría",
+            "Asco",
+            "Aburrimiento",
+            "Ninguna"
+          ],
+          "correcta": 0,
+          "explicacion": "Lograr algo nos da satisfacción."
+        }
+      ]
+    },
+    {
+      "id": "prim-5-huma-u1-l2",
+      "titulo": "Mis metas",
+      "orden": 2,
+      "video": null,
+      "texto": "Un proyecto de vida es pensar quién quiero ser y qué quiero lograr. Empieza con metas pequeñas: aprender a tocar un instrumento, leer un libro al mes, ayudar en la comunidad. Nadie debe limitar tus sueños por ser niña o niño.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "Un proyecto de vida es…",
+          "opciones": [
+            "Pensar quién quiero ser y qué quiero lograr",
+            "Una tarea de matemáticas",
+            "Un juego",
+            "Lo que otros deciden por mí"
+          ],
+          "correcta": 0,
+          "explicacion": "Es imaginar y planear tu futuro."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es una meta a corto plazo?",
+          "opciones": [
+            "Leer un libro este mes",
+            "Ser abuelo",
+            "Jubilarse",
+            "Comprar una casa mañana"
+          ],
+          "correcta": 0,
+          "explicacion": "Una meta corta se logra en poco tiempo."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "Una niña quiere ser ingeniera. ¿Qué opinas?",
+          "opciones": [
+            "Puede serlo, las profesiones no tienen género",
+            "No puede",
+            "Solo los niños",
+            "Es imposible"
+          ],
+          "correcta": 0,
+          "explicacion": "Niñas y niños pueden elegir cualquier profesión."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "Para alcanzar una meta ayuda…",
+          "opciones": [
+            "Planear pasos y ser constante",
+            "Esperar sin hacer nada",
+            "Rendirse al primer error",
+            "Copiar a otros"
+          ],
+          "correcta": 0,
+          "explicacion": "La constancia y un plan nos acercan a las metas."
+        }
+      ]
+    }
+  ]
+}

@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
 import '../../datos/modelos/modelos.dart';
+import '../../nucleo/nem.dart';
 import '../../nucleo/servicios.dart';
 import '../../widgets/boton_principal.dart';
 import '../inicio/pantalla_inicio.dart';
 
-/// Bienvenida de dos pasos: nombre y datos escolares.
+/// Bienvenida de dos pasos: nombre y grado de primaria.
 ///
 /// Si [esEdicion] es verdadero, la pantalla se abre desde el perfil y al
 /// guardar vuelve atrás. En el primer uso guarda y abre [PantallaInicio].
@@ -25,7 +26,6 @@ class PantallaBienvenida extends StatefulWidget {
 
 class _PantallaBienvenidaState extends State<PantallaBienvenida> {
   late final TextEditingController _nombre;
-  late String _nivel;
   late int _grado;
   late String _idioma;
 
@@ -38,8 +38,7 @@ class _PantallaBienvenidaState extends State<PantallaBienvenida> {
     super.initState();
     final inicial = widget.usuarioInicial;
     _nombre = TextEditingController(text: inicial?.nombre ?? '');
-    _nivel = inicial?.nivel ?? 'primaria';
-    _grado = inicial?.grado ?? 1;
+    _grado = (inicial?.grado ?? 1).clamp(Nem.gradoMinimo, Nem.gradoMaximo);
     _idioma = inicial?.idioma ?? 'es';
   }
 
@@ -48,8 +47,6 @@ class _PantallaBienvenidaState extends State<PantallaBienvenida> {
     _nombre.dispose();
     super.dispose();
   }
-
-  int get _gradosDelNivel => _nivel == 'primaria' ? 6 : 3;
 
   void _continuar() {
     final nombre = _nombre.text.trim();
@@ -64,13 +61,6 @@ class _PantallaBienvenidaState extends State<PantallaBienvenida> {
   }
 
   void _atras() => setState(() => _paso = 0);
-
-  void _cambiarNivel(String nivel) {
-    setState(() {
-      _nivel = nivel;
-      if (_grado > _gradosDelNivel) _grado = _gradosDelNivel;
-    });
-  }
 
   Future<void> _guardar() async {
     final nombre = _nombre.text.trim();
@@ -90,7 +80,6 @@ class _PantallaBienvenidaState extends State<PantallaBienvenida> {
           'demo-${DateTime.now().millisecondsSinceEpoch}',
       nombre: nombre,
       grado: _grado,
-      nivel: _nivel,
       idioma: _idioma,
     );
 
@@ -187,19 +176,8 @@ class _PantallaBienvenidaState extends State<PantallaBienvenida> {
       children: [
         Text('Paso 2 de 2', style: tema.textTheme.labelLarge),
         const SizedBox(height: 8),
-        Text('Tu nivel y tu grado', style: tema.textTheme.titleLarge),
-        const SizedBox(height: 16),
-        Text('Nivel', style: tema.textTheme.titleSmall),
-        const SizedBox(height: 8),
-        Wrap(
-          spacing: 8,
-          runSpacing: 8,
-          children: [
-            _opcionNivel('primaria', 'Primaria'),
-            _opcionNivel('secundaria', 'Secundaria'),
-            _opcionNivel('bachillerato', 'Bachillerato'),
-          ],
-        ),
+        Text('¿En qué grado de primaria vas?',
+            style: tema.textTheme.titleLarge),
         const SizedBox(height: 16),
         Text('Grado', style: tema.textTheme.titleSmall),
         const SizedBox(height: 8),
@@ -207,9 +185,16 @@ class _PantallaBienvenidaState extends State<PantallaBienvenida> {
           spacing: 8,
           runSpacing: 8,
           children: [
-            for (var grado = 1; grado <= _gradosDelNivel; grado++)
+            for (var grado = Nem.gradoMinimo;
+                grado <= Nem.gradoMaximo;
+                grado++)
               _opcionGrado(grado),
           ],
+        ),
+        const SizedBox(height: 8),
+        Text(
+          Nem.etiquetaGrado(_grado),
+          style: tema.textTheme.bodySmall,
         ),
         const SizedBox(height: 16),
         Text('Idioma', style: tema.textTheme.titleSmall),
@@ -233,14 +218,6 @@ class _PantallaBienvenidaState extends State<PantallaBienvenida> {
           child: const Text('Atrás'),
         ),
       ],
-    );
-  }
-
-  Widget _opcionNivel(String valor, String etiqueta) {
-    return ChoiceChip(
-      label: Text(etiqueta),
-      selected: _nivel == valor,
-      onSelected: (_) => _cambiarNivel(valor),
     );
   }
 

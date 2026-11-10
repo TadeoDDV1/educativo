@@ -1,0 +1,144 @@
+{
+  "id": "prim-3-etic-u1",
+  "titulo": "Mi territorio: mi entidad y México",
+  "nivel": "primaria",
+  "grado": 3,
+  "fase": 4,
+  "campo": "etica",
+  "contenido": "Caracterización y localización del territorio donde vive, la entidad y México",
+  "pda": [
+    "Usa croquis, mapas y puntos cardinales para localizar su comunidad, su entidad y México.",
+    "Identifica tipos de clima, vegetación, fauna y cuerpos de agua (ríos, lagos, cenotes, humedales) de su entidad y las formas culturales vinculadas al patrimonio biocultural."
+  ],
+  "ejesArticuladores": [
+    "interculturalidad_critica",
+    "pensamiento_critico"
+  ],
+  "objetivo": "Ubicar mi comunidad y conocer la naturaleza y la cultura de mi entidad.",
+  "fuente": "Programa Sintético de la Fase 4 (SEP, 2024)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-3-etic-u1-l1",
+      "titulo": "Mapas y puntos cardinales",
+      "orden": 1,
+      "video": null,
+      "texto": "Un croquis es un dibujo sencillo de un lugar; un mapa representa un territorio más grande. Para orientarnos usamos los puntos cardinales: norte, sur, este (oriente) y oeste (poniente). El Sol sale por el oriente y se oculta por el poniente. México tiene 32 entidades federativas.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Por dónde sale el Sol?",
+          "opciones": [
+            "Por el poniente (oeste)",
+            "Por el oriente (este)",
+            "Por el norte",
+            "Por el sur"
+          ],
+          "correcta": 1,
+          "explicacion": "El Sol sale por el oriente."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuántas entidades federativas tiene México?",
+          "opciones": [
+            "31",
+            "32",
+            "30",
+            "50"
+          ],
+          "correcta": 1,
+          "explicacion": "México tiene 32 entidades federativas: 31 estados y la Ciudad de México."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "Un dibujo sencillo para mostrar el camino de tu casa a la escuela es…",
+          "opciones": [
+            "Un croquis",
+            "Un cuento",
+            "Una receta",
+            "Un poema"
+          ],
+          "correcta": 0,
+          "explicacion": "El croquis muestra lugares y trayectos de forma sencilla."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "La capital de México es…",
+          "opciones": [
+            "Guadalajara",
+            "Monterrey",
+            "Ciudad de México",
+            "Mérida"
+          ],
+          "correcta": 2,
+          "explicacion": "La capital del país es la Ciudad de México."
+        }
+      ]
+    },
+    {
+      "id": "prim-3-etic-u1-l2",
+      "titulo": "Naturaleza y cultura de mi entidad",
+      "orden": 2,
+      "video": null,
+      "texto": "Cada región de México tiene su clima, su vegetación y su fauna: hay desiertos en el norte, selvas en el sureste y bosques en las montañas. Hay ríos, lagos, humedales y cenotes. Los pueblos han creado alimentos, fiestas y saberes ligados a su territorio: eso es el patrimonio biocultural.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "Un cenote es…",
+          "opciones": [
+            "Un volcán",
+            "Un cuerpo de agua subterráneo, común en la península de Yucatán",
+            "Un desierto",
+            "Un tipo de árbol"
+          ],
+          "correcta": 1,
+          "explicacion": "Los cenotes son pozos de agua dulce formados en la roca caliza."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Dónde predominan los desiertos en México?",
+          "opciones": [
+            "En el norte",
+            "En el sureste",
+            "En las costas de Chiapas",
+            "En la Ciudad de México"
+          ],
+          "correcta": 0,
+          "explicacion": "Los grandes desiertos están en el norte del país."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "La milpa (maíz, frijol y calabaza) es un ejemplo de…",
+          "opciones": [
+            "Patrimonio biocultural",
+            "Contaminación",
+            "Industria pesada",
+            "Clima frío"
+          ],
+          "correcta": 0,
+          "explicacion": "La milpa une naturaleza y saberes de los pueblos."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué cuerpo de agua es una corriente que corre hacia el mar o un lago?",
+          "opciones": [
+            "Cenote",
+            "Río",
+            "Desierto",
+            "Montaña"
+          ],
+          "correcta": 1,
+          "explicacion": "Los ríos son corrientes de agua."
+        }
+      ]
+    }
+  ]
+}

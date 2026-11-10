@@ -1,0 +1,145 @@
+{
+  "id": "prim-6-etic-u1",
+  "titulo": "Democracia y participación en mi comunidad",
+  "nivel": "primaria",
+  "grado": 6,
+  "fase": 5,
+  "campo": "etica",
+  "contenido": "Democracia como forma de vida: construcción, cumplimiento y aplicación justa de acuerdos, normas y leyes",
+  "pda": [
+    "Reconoce formas de participación democrática en la escuela y la comunidad, incluidas las asambleas comunitarias.",
+    "Analiza la importancia de las leyes y los acuerdos para proteger los derechos de todas las personas."
+  ],
+  "ejesArticuladores": [
+    "pensamiento_critico",
+    "inclusion",
+    "interculturalidad_critica"
+  ],
+  "objetivo": "Participar de forma democrática y justa en las decisiones colectivas.",
+  "fuente": "Plan de Estudio 2022 · Fase 5 (pendiente de cotejar con el Programa Sintético de la Fase 5)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-6-etic-u1-l1",
+      "titulo": "Decidimos juntos",
+      "orden": 1,
+      "video": null,
+      "texto": "La democracia no solo es votar: es participar, dialogar y respetar las decisiones de la mayoría cuidando los derechos de las minorías. En muchas comunidades indígenas las decisiones se toman en asamblea, donde las personas discuten y acuerdan lo mejor para todos.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "En una asamblea comunitaria…",
+          "opciones": [
+            "Decide una sola persona",
+            "Las personas dialogan y acuerdan",
+            "Nadie habla",
+            "Se pelea"
+          ],
+          "correcta": 1,
+          "explicacion": "La asamblea es un espacio de diálogo y acuerdo."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "La democracia es…",
+          "opciones": [
+            "Solo votar cada seis años",
+            "Una forma de vida basada en participar y dialogar",
+            "Que mande el más fuerte",
+            "No tener reglas"
+          ],
+          "correcta": 1,
+          "explicacion": "Es una forma de vida, no solo elecciones."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "Si tu propuesta no gana la votación, ¿qué haces?",
+          "opciones": [
+            "Respeto el resultado y sigo participando",
+            "Me enojo y saboteo",
+            "Me salgo del grupo",
+            "Rompo los acuerdos"
+          ],
+          "correcta": 0,
+          "explicacion": "Respetar la decisión colectiva es parte de la democracia."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "Las minorías en una votación…",
+          "opciones": [
+            "No tienen derechos",
+            "Deben ser escuchadas y respetadas",
+            "Deben callar",
+            "Pierden su voz"
+          ],
+          "correcta": 1,
+          "explicacion": "La democracia protege los derechos de todas las personas."
+        }
+      ]
+    },
+    {
+      "id": "prim-6-etic-u1-l2",
+      "titulo": "Leyes que nos protegen",
+      "orden": 2,
+      "video": null,
+      "texto": "La Constitución es la ley más importante de México: establece nuestros derechos y cómo se organiza el gobierno. Las leyes y los reglamentos sirven para convivir con justicia. Cuando una norma es injusta, se puede proponer cambiarla de forma pacífica.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la ley más importante de México?",
+          "opciones": [
+            "El reglamento escolar",
+            "La Constitución",
+            "Un contrato",
+            "Un cuento"
+          ],
+          "correcta": 1,
+          "explicacion": "La Constitución Política de los Estados Unidos Mexicanos."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "Las leyes sirven para…",
+          "opciones": [
+            "Convivir con justicia y proteger derechos",
+            "Castigar sin razón",
+            "Nada",
+            "Beneficiar a unos pocos"
+          ],
+          "correcta": 0,
+          "explicacion": "Las leyes protegen los derechos de todas las personas."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "Si una regla te parece injusta, ¿qué puedes hacer?",
+          "opciones": [
+            "Proponer cambiarla de forma pacífica",
+            "Romperla con violencia",
+            "Ignorarla en secreto",
+            "Nada"
+          ],
+          "correcta": 0,
+          "explicacion": "El diálogo y la participación permiten cambiar normas."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué artículo de la Constitución habla del derecho a la educación?",
+          "opciones": [
+            "Artículo 3.º",
+            "Artículo 100",
+            "Artículo 1000",
+            "Ninguno"
+          ],
+          "correcta": 0,
+          "explicacion": "El artículo 3.º establece el derecho a la educación."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "id": "prim-5-leng-u1",
+  "titulo": "Escribo mejor: c, s, z, g, j y signos dobles",
+  "nivel": "primaria",
+  "grado": 5,
+  "fase": 5,
+  "campo": "lenguajes",
+  "contenido": "Búsqueda y manejo reflexivo de información · Revisión y corrección de textos propios",
+  "pda": [
+    "Revisa y corrige la ortografía de sus textos considerando reglas de uso de c, s, z, g y j.",
+    "Usa signos de interrogación y exclamación de apertura y cierre."
+  ],
+  "ejesArticuladores": [
+    "apropiacion_culturas",
+    "pensamiento_critico"
+  ],
+  "objetivo": "Aplicar reglas ortográficas al revisar mis textos.",
+  "fuente": "Plan de Estudio 2022 · Fase 5 (pendiente de cotejar con el Programa Sintético de la Fase 5)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-5-leng-u1-l1",
+      "titulo": "C, S o Z",
+      "orden": 1,
+      "video": null,
+      "texto": "Algunas reglas ayudan: las palabras que terminan en z forman el plural con -ces (lápiz → lápices, luz → luces). Muchas palabras terminadas en -ción vienen de palabras con t o d (canción, atención). Los diminutivos -cito y -cita van con c (pancito, florecita) cuando la palabra no tiene s al final.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el plural de «luz»?",
+          "opciones": [
+            "luzes",
+            "luces",
+            "luses",
+            "lus"
+          ],
+          "correcta": 1,
+          "explicacion": "Las palabras en z forman el plural con -ces."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál está bien escrita?",
+          "opciones": [
+            "atensión",
+            "atención",
+            "atenzión",
+            "atencion"
+          ],
+          "correcta": 1,
+          "explicacion": "Atención se escribe con c y lleva tilde."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "El diminutivo de «flor» es…",
+          "opciones": [
+            "florsita",
+            "florecita",
+            "florezita",
+            "flor-sita"
+          ],
+          "correcta": 1,
+          "explicacion": "Se escribe florecita, con c."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el plural de «nariz»?",
+          "opciones": [
+            "narices",
+            "narizes",
+            "narises",
+            "nariz"
+          ],
+          "correcta": 0,
+          "explicacion": "nariz → narices."
+        }
+      ]
+    },
+    {
+      "id": "prim-5-leng-u1-l2",
+      "titulo": "G o J",
+      "orden": 2,
+      "video": null,
+      "texto": "Los verbos que terminan en -ger y -gir se escriben con g (proteger, elegir), excepto tejer y crujir. Las palabras que terminan en -aje se escriben con j (viaje, paisaje, lenguaje). Ante a, o, u, la g suena suave (gato); ante e, i suena como j (gente).",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál está bien escrita?",
+          "opciones": [
+            "protejer",
+            "proteger",
+            "protejér",
+            "protexer"
+          ],
+          "correcta": 1,
+          "explicacion": "Los verbos en -ger van con g."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál está bien escrita?",
+          "opciones": [
+            "viage",
+            "viaje",
+            "biaje",
+            "viahe"
+          ],
+          "correcta": 1,
+          "explicacion": "Las palabras terminadas en -aje van con j."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué verbo es excepción y se escribe con j?",
+          "opciones": [
+            "elegir",
+            "tejer",
+            "recoger",
+            "corregir"
+          ],
+          "correcta": 1,
+          "explicacion": "Tejer y crujir son las excepciones."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "Completa: el pai___e de la sierra",
+          "opciones": [
+            "g",
+            "j",
+            "x",
+            "h"
+          ],
+          "correcta": 1,
+          "explicacion": "Paisaje termina en -aje: con j."
+        }
+      ]
+    },
+    {
+      "id": "prim-5-leng-u1-l3",
+      "titulo": "Signos que abren y cierran",
+      "orden": 3,
+      "video": null,
+      "texto": "En español, las preguntas y exclamaciones llevan signo al principio y al final: ¿Vienes mañana? ¡Qué alegría! Los signos se colocan donde empieza y termina la pregunta, aunque esté a mitad de la oración: Si llueve, ¿iremos al río?",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál está bien escrita?",
+          "opciones": [
+            "Vienes mañana?",
+            "¿Vienes mañana?",
+            "¿Vienes mañana",
+            "?Vienes mañana¿"
+          ],
+          "correcta": 1,
+          "explicacion": "La pregunta se abre con ¿ y se cierra con ?."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Dónde va el signo de apertura en «Si llueve iremos al río»?",
+          "opciones": [
+            "Antes de «Si»",
+            "Antes de «iremos»",
+            "Al final",
+            "No lleva"
+          ],
+          "correcta": 1,
+          "explicacion": "Si llueve, ¿iremos al río?: la pregunta empieza en «iremos»."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "«¡Ganamos el torneo!» expresa…",
+          "opciones": [
+            "Una pregunta",
+            "Una emoción",
+            "Una lista",
+            "Una orden secreta"
+          ],
+          "correcta": 1,
+          "explicacion": "Los signos de exclamación expresan emoción."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál está bien escrita?",
+          "opciones": [
+            "¡Qué bonito huipil!",
+            "Qué bonito huipil!",
+            "¡Qué bonito huipil",
+            "!Qué bonito huipil¡"
+          ],
+          "correcta": 0,
+          "explicacion": "Se abre con ¡ y se cierra con !."
+        }
+      ]
+    }
+  ]
+}

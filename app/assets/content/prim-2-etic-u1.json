@@ -1,0 +1,145 @@
+{
+  "id": "prim-2-etic-u1",
+  "titulo": "Resolvemos conflictos dialogando",
+  "nivel": "primaria",
+  "grado": 2,
+  "fase": 3,
+  "campo": "etica",
+  "contenido": "Construcción de la paz mediante el diálogo · Democracia como forma de vida: construcción participativa de normas, reglas y acuerdos",
+  "pda": [
+    "Reconoce que los conflictos son parte de la convivencia y propone resolverlos mediante el diálogo, la escucha y la empatía.",
+    "Participa en la construcción de acuerdos y reglas para convivir en casa, el aula y la comunidad, y reconoce las consecuencias de no respetarlos."
+  ],
+  "ejesArticuladores": [
+    "inclusion",
+    "igualdad_genero",
+    "pensamiento_critico"
+  ],
+  "objetivo": "Resolver desacuerdos con diálogo y construir acuerdos entre todas y todos.",
+  "fuente": "Programa Sintético de la Fase 3 (SEP, 2024)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-2-etic-u1-l1",
+      "titulo": "Hablando nos entendemos",
+      "orden": 1,
+      "video": null,
+      "texto": "A veces no estamos de acuerdo: es normal. Lo importante es resolverlo sin violencia. Para dialogar: respiro para calmarme, digo cómo me siento, escucho a la otra persona y buscamos juntos una solución.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "Tú y un compañero quieren el mismo balón. ¿Qué es mejor?",
+          "opciones": [
+            "Quitárselo",
+            "Turnarse o jugar juntos",
+            "Llorar",
+            "Pegarle"
+          ],
+          "correcta": 1,
+          "explicacion": "Turnarse o jugar juntos es una solución pacífica."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué es lo primero para resolver un conflicto?",
+          "opciones": [
+            "Gritar",
+            "Calmarme y escuchar",
+            "Irme sin hablar",
+            "Burlarme"
+          ],
+          "correcta": 1,
+          "explicacion": "Calmarse ayuda a dialogar."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "Dialogar significa…",
+          "opciones": [
+            "Hablar y escuchar para entendernos",
+            "Hablar solo yo",
+            "Ignorar",
+            "Pelear"
+          ],
+          "correcta": 0,
+          "explicacion": "En el diálogo todas las personas hablan y escuchan."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "Una compañera está triste porque nadie juega con ella. ¿Qué haces?",
+          "opciones": [
+            "La invito a jugar",
+            "Me río",
+            "La ignoro",
+            "Le digo que se vaya"
+          ],
+          "correcta": 0,
+          "explicacion": "Invitarla muestra empatía e inclusión."
+        }
+      ]
+    },
+    {
+      "id": "prim-2-etic-u1-l2",
+      "titulo": "Acuerdos del salón",
+      "orden": 2,
+      "video": null,
+      "texto": "Los acuerdos son reglas que decidimos entre todas y todos para convivir mejor. Cuando cada quien da su opinión y votamos, practicamos la democracia. Si no cumplimos un acuerdo, afecta a todo el grupo.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Quién debe participar en los acuerdos del salón?",
+          "opciones": [
+            "Solo el maestro",
+            "Todo el grupo",
+            "Solo los más grandes",
+            "Nadie"
+          ],
+          "correcta": 1,
+          "explicacion": "En la democracia todas y todos participan."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es un buen acuerdo?",
+          "opciones": [
+            "Respetar el turno para hablar",
+            "Gritar cuando quiera",
+            "Romper los materiales",
+            "No compartir"
+          ],
+          "correcta": 0,
+          "explicacion": "Respetar turnos ayuda a escucharnos."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "Si no cumplimos un acuerdo…",
+          "opciones": [
+            "No pasa nada",
+            "Afecta la convivencia de todos",
+            "Ganamos un premio",
+            "Nos vamos de vacaciones"
+          ],
+          "correcta": 1,
+          "explicacion": "No cumplir afecta a todo el grupo."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "Para decidir entre varias propuestas, el grupo puede…",
+          "opciones": [
+            "Votar",
+            "Pelear",
+            "Dejar que decida uno solo",
+            "No hacer nada"
+          ],
+          "correcta": 0,
+          "explicacion": "Votar es una forma democrática de decidir."
+        }
+      ]
+    }
+  ]
+}

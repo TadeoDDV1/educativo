@@ -1,0 +1,144 @@
+{
+  "id": "prim-1-etic-u1",
+  "titulo": "Cuido la naturaleza de mi comunidad",
+  "nivel": "primaria",
+  "grado": 1,
+  "fase": 3,
+  "campo": "etica",
+  "contenido": "Respeto, cuidado y empatía hacia la naturaleza, como parte de un todo interdependiente",
+  "pda": [
+    "Describe y reconoce la existencia de otros seres vivos (animales, plantas, hongos y microorganismos) y componentes de la naturaleza presentes en el lugar donde vive.",
+    "Comprende cómo las acciones de los seres humanos pueden preservar, modificar o dañar los componentes del entorno."
+  ],
+  "ejesArticuladores": [
+    "vida_saludable",
+    "interculturalidad_critica"
+  ],
+  "objetivo": "Reconocer a los seres vivos de mi entorno y proponer acciones para cuidarlos.",
+  "fuente": "Programa Sintético de la Fase 3 (SEP, 2024)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-1-etic-u1-l1",
+      "titulo": "Seres vivos a mi alrededor",
+      "orden": 1,
+      "video": null,
+      "texto": "Los seres vivos nacen, crecen, se alimentan y se reproducen: las personas, los animales, las plantas y los hongos son seres vivos. El agua, el aire, el suelo y las piedras no son seres vivos, pero los seres vivos los necesitan. Todo en la naturaleza está conectado.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es un ser vivo?",
+          "opciones": [
+            "Una piedra",
+            "Un árbol",
+            "El agua",
+            "Una silla"
+          ],
+          "correcta": 1,
+          "explicacion": "El árbol nace, crece y se alimenta: es un ser vivo."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué necesitan las plantas para vivir?",
+          "opciones": [
+            "Agua, luz y aire",
+            "Solo piedras",
+            "Plástico",
+            "Nada"
+          ],
+          "correcta": 0,
+          "explicacion": "Las plantas necesitan agua, luz del sol, aire y suelo."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál NO es un ser vivo?",
+          "opciones": [
+            "Perro",
+            "Maíz",
+            "Nube",
+            "Mariposa"
+          ],
+          "correcta": 2,
+          "explicacion": "La nube es agua en el aire; no nace ni se alimenta."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "Los hongos que salen después de la lluvia son…",
+          "opciones": [
+            "Piedras",
+            "Seres vivos",
+            "Juguetes",
+            "Basura"
+          ],
+          "correcta": 1,
+          "explicacion": "Los hongos son seres vivos, como las plantas y los animales."
+        }
+      ]
+    },
+    {
+      "id": "prim-1-etic-u1-l2",
+      "titulo": "Acciones para cuidar la naturaleza",
+      "orden": 2,
+      "video": null,
+      "texto": "Nuestras acciones pueden cuidar o dañar la naturaleza. Recoger la basura, cerrar la llave del agua, no maltratar a los animales y sembrar plantas son formas de mostrar respeto y empatía por todos los seres vivos.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "Ves basura junto al río. ¿Qué es lo mejor?",
+          "opciones": [
+            "Tirar más basura",
+            "Recogerla con ayuda de un adulto",
+            "No hacer nada",
+            "Echarla al agua"
+          ],
+          "correcta": 1,
+          "explicacion": "Recoger la basura protege el río y a los animales que viven en él."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cómo cuidas el agua al lavarte los dientes?",
+          "opciones": [
+            "Dejo la llave abierta",
+            "Cierro la llave mientras me cepillo",
+            "Uso una cubeta llena",
+            "Juego con el agua"
+          ],
+          "correcta": 1,
+          "explicacion": "Cerrar la llave evita desperdiciar agua."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "Encuentras un nido en un árbol. ¿Qué haces?",
+          "opciones": [
+            "Lo observo sin tocarlo",
+            "Lo tiro",
+            "Me llevo los huevos",
+            "Le aviento piedras"
+          ],
+          "correcta": 0,
+          "explicacion": "Observar sin tocar protege a las aves y a sus crías."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué acción muestra empatía con los animales?",
+          "opciones": [
+            "Jalarle la cola a un gato",
+            "Darle agua a un perro con sed",
+            "Asustar a las gallinas",
+            "Encerrar a un pájaro"
+          ],
+          "correcta": 1,
+          "explicacion": "Darle agua muestra que nos importa su bienestar."
+        }
+      ]
+    }
+  ]
+}

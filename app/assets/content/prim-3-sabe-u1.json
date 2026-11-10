@@ -1,0 +1,144 @@
+{
+  "id": "prim-3-sabe-u1",
+  "titulo": "Plantas, animales y su entorno",
+  "nivel": "primaria",
+  "grado": 3,
+  "fase": 4,
+  "campo": "saberes",
+  "contenido": "Interacciones entre plantas, animales y el entorno natural: nutrición y locomoción",
+  "pda": [
+    "Describe cómo se nutren las plantas y los animales y distingue animales herbívoros, carnívoros y omnívoros.",
+    "Relaciona las formas de desplazamiento de los animales con el medio en que viven."
+  ],
+  "ejesArticuladores": [
+    "pensamiento_critico",
+    "vida_saludable"
+  ],
+  "objetivo": "Explicar cómo se alimentan y se mueven los seres vivos de mi entorno.",
+  "fuente": "Programa Sintético de la Fase 4 (SEP, 2024)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-3-sabe-u1-l1",
+      "titulo": "¿Cómo se alimentan?",
+      "orden": 1,
+      "video": null,
+      "texto": "Las plantas fabrican su propio alimento con la luz del sol, el agua y el aire. Los animales no pueden hacerlo, así que comen otros seres vivos: los herbívoros comen plantas (la vaca), los carnívoros comen otros animales (el águila) y los omnívoros comen de ambos (el tlacuache).",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Quién fabrica su propio alimento con la luz del sol?",
+          "opciones": [
+            "El perro",
+            "La planta de maíz",
+            "La gallina",
+            "El ser humano"
+          ],
+          "correcta": 1,
+          "explicacion": "Las plantas fabrican su alimento con luz, agua y aire."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "Un animal que solo come plantas es…",
+          "opciones": [
+            "Carnívoro",
+            "Herbívoro",
+            "Omnívoro",
+            "Insecto"
+          ],
+          "correcta": 1,
+          "explicacion": "Los herbívoros se alimentan de plantas."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "El águila que caza ratones es…",
+          "opciones": [
+            "Herbívora",
+            "Carnívora",
+            "Omnívora",
+            "Planta"
+          ],
+          "correcta": 1,
+          "explicacion": "Se alimenta de otros animales: es carnívora."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "El tlacuache come frutas, insectos y huevos. Es…",
+          "opciones": [
+            "Omnívoro",
+            "Herbívoro",
+            "Carnívoro",
+            "Hongo"
+          ],
+          "correcta": 0,
+          "explicacion": "Come plantas y animales: es omnívoro."
+        }
+      ]
+    },
+    {
+      "id": "prim-3-sabe-u1-l2",
+      "titulo": "¿Cómo se mueven?",
+      "orden": 2,
+      "video": null,
+      "texto": "Los animales se desplazan de distintas formas según el lugar donde viven: los peces nadan, las aves vuelan, las serpientes reptan y muchos mamíferos caminan o corren. Sus cuerpos tienen aletas, alas, patas o escamas que les ayudan a moverse.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cómo se desplaza una serpiente?",
+          "opciones": [
+            "Vuela",
+            "Repta",
+            "Nada siempre",
+            "Salta"
+          ],
+          "correcta": 1,
+          "explicacion": "Las serpientes reptan arrastrando el cuerpo."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué parte del cuerpo ayuda a los peces a nadar?",
+          "opciones": [
+            "Alas",
+            "Aletas",
+            "Plumas",
+            "Pezuñas"
+          ],
+          "correcta": 1,
+          "explicacion": "Las aletas les permiten nadar."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué animal vuela?",
+          "opciones": [
+            "Ajolote",
+            "Colibrí",
+            "Tortuga",
+            "Venado"
+          ],
+          "correcta": 1,
+          "explicacion": "El colibrí vuela con sus alas."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "El ajolote vive en…",
+          "opciones": [
+            "El desierto",
+            "Lagos y canales de agua",
+            "Los árboles",
+            "Las nubes"
+          ],
+          "correcta": 1,
+          "explicacion": "El ajolote es un anfibio que vive en el agua; está en peligro y debemos cuidar su hábitat."
+        }
+      ]
+    }
+  ]
+}

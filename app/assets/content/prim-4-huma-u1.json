@@ -1,0 +1,143 @@
+{
+  "id": "prim-4-huma-u1",
+  "titulo": "Vida activa y saludable",
+  "nivel": "primaria",
+  "grado": 4,
+  "fase": 4,
+  "campo": "humano",
+  "contenido": "Estilos de vida activos y saludables",
+  "pda": [
+    "Reconoce hábitos de alimentación, hidratación, descanso y actividad física que favorecen su salud.",
+    "Organiza juegos y actividades físicas con su grupo para promover una vida activa."
+  ],
+  "ejesArticuladores": [
+    "vida_saludable"
+  ],
+  "objetivo": "Elegir hábitos que cuiden mi salud y la de mi familia.",
+  "fuente": "Programa Sintético de la Fase 4 (SEP, 2024)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-4-huma-u1-l1",
+      "titulo": "Comer bien con lo que tenemos",
+      "orden": 1,
+      "video": null,
+      "texto": "Una alimentación saludable combina verduras y frutas, cereales como el maíz, y leguminosas como el frijol, que en México comemos desde hace miles de años. Es mejor tomar agua simple que bebidas azucaradas y elegir alimentos naturales en lugar de productos con sellos de advertencia.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué combinación tradicional es nutritiva?",
+          "opciones": [
+            "Tortilla con frijoles y verduras",
+            "Refresco y papas",
+            "Solo dulces",
+            "Pastelitos"
+          ],
+          "correcta": 0,
+          "explicacion": "Maíz, frijol y verduras forman una comida completa."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "Un producto con muchos sellos de advertencia…",
+          "opciones": [
+            "Es el más saludable",
+            "Tiene exceso de azúcar, grasa o sal",
+            "No tiene ingredientes",
+            "Es agua"
+          ],
+          "correcta": 1,
+          "explicacion": "Los sellos advierten exceso de azúcares, grasas, sodio o calorías."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué bebida es mejor tomar todos los días?",
+          "opciones": [
+            "Agua simple",
+            "Refresco",
+            "Bebida energética",
+            "Jugo embotellado"
+          ],
+          "correcta": 0,
+          "explicacion": "El agua simple es la mejor opción."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "El frijol es una…",
+          "opciones": [
+            "Leguminosa",
+            "Bebida",
+            "Golosina",
+            "Grasa"
+          ],
+          "correcta": 0,
+          "explicacion": "El frijol es una leguminosa rica en proteínas."
+        }
+      ]
+    },
+    {
+      "id": "prim-4-huma-u1-l2",
+      "titulo": "Moverse y descansar",
+      "orden": 2,
+      "video": null,
+      "texto": "Se recomienda que niñas y niños hagan al menos 60 minutos de actividad física al día: jugar, caminar, bailar o ayudar en actividades del campo. Dormir entre 9 y 11 horas permite que el cuerpo y el cerebro descansen. Pasar muchas horas frente a pantallas nos vuelve sedentarios.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuánta actividad física diaria se recomienda?",
+          "opciones": [
+            "5 minutos",
+            "Al menos 60 minutos",
+            "Nada",
+            "8 horas seguidas"
+          ],
+          "correcta": 1,
+          "explicacion": "Se recomiendan al menos 60 minutos diarios."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuántas horas conviene dormir a tu edad?",
+          "opciones": [
+            "4 a 5",
+            "9 a 11",
+            "15 a 16",
+            "Las que sea"
+          ],
+          "correcta": 1,
+          "explicacion": "Entre 9 y 11 horas ayuda a crecer y aprender."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es un hábito sedentario?",
+          "opciones": [
+            "Jugar fútbol",
+            "Pasar horas sentado frente a una pantalla",
+            "Bailar",
+            "Caminar a la escuela"
+          ],
+          "correcta": 1,
+          "explicacion": "Estar mucho tiempo sentado sin moverse es sedentarismo."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "Para organizar un juego con tu grupo es importante…",
+          "opciones": [
+            "Que todas y todos puedan participar",
+            "Excluir a quien corre lento",
+            "Que solo jueguen los niños",
+            "No poner reglas"
+          ],
+          "correcta": 0,
+          "explicacion": "Los juegos incluyentes permiten que todos participen."
+        }
+      ]
+    }
+  ]
+}

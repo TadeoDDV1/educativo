@@ -1,0 +1,144 @@
+{
+  "id": "prim-2-sabe-u1",
+  "titulo": "Sumas que se repiten y medir el tiempo",
+  "nivel": "primaria",
+  "grado": 2,
+  "fase": 3,
+  "campo": "saberes",
+  "contenido": "Construcción de la noción de multiplicación y división, y su relación como operaciones inversas · Medición del tiempo",
+  "pda": [
+    "Resuelve problemas de su contexto que requieren multiplicar con sumas iteradas o arreglos rectangulares, con números menores o iguales a 10, y usa el signo «×».",
+    "Resuelve problemas de reparto en partes iguales.",
+    "Usa unidades de tiempo (día, semana, mes, año) para ordenar actividades de la comunidad."
+  ],
+  "ejesArticuladores": [
+    "pensamiento_critico"
+  ],
+  "objetivo": "Multiplicar como suma repetida, repartir en partes iguales y usar el calendario.",
+  "fuente": "Programa Sintético de la Fase 3 (SEP, 2024)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-2-sabe-u1-l1",
+      "titulo": "Sumar la misma cantidad",
+      "orden": 1,
+      "video": null,
+      "texto": "Cuando sumamos la misma cantidad varias veces, podemos multiplicar. 3 canastas con 4 naranjas cada una son 4 + 4 + 4 = 12, que también se escribe 3 × 4 = 12. Repartir en partes iguales es dividir: 10 dulces entre 2 amigos tocan a 5 cada uno.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "Hay 3 canastas con 4 naranjas cada una. ¿Cuántas naranjas hay?",
+          "opciones": [
+            "7",
+            "12",
+            "34",
+            "10"
+          ],
+          "correcta": 1,
+          "explicacion": "4 + 4 + 4 = 12, o sea 3 × 4 = 12."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "4 + 4 + 4 se puede escribir como…",
+          "opciones": [
+            "4 + 3",
+            "3 × 4",
+            "4 − 3",
+            "43"
+          ],
+          "correcta": 1,
+          "explicacion": "Sumar tres veces el 4 es 3 × 4."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "Repartes 10 dulces entre 2 amigos por igual. ¿Cuántos le tocan a cada uno?",
+          "opciones": [
+            "5",
+            "8",
+            "12",
+            "20"
+          ],
+          "correcta": 0,
+          "explicacion": "10 repartido entre 2 es 5."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "2 × 5 = ___",
+          "opciones": [
+            "7",
+            "25",
+            "10",
+            "3"
+          ],
+          "correcta": 2,
+          "explicacion": "2 × 5 es 5 + 5 = 10."
+        }
+      ]
+    },
+    {
+      "id": "prim-2-sabe-u1-l2",
+      "titulo": "Días, semanas y meses",
+      "orden": 2,
+      "video": null,
+      "texto": "Medimos el tiempo con días, semanas, meses y años. Una semana tiene 7 días y un año tiene 12 meses. En el campo, el calendario ayuda a saber cuándo sembrar y cuándo cosechar, y también a recordar las fiestas de la comunidad.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuántos días tiene una semana?",
+          "opciones": [
+            "5",
+            "7",
+            "10",
+            "12"
+          ],
+          "correcta": 1,
+          "explicacion": "La semana tiene 7 días."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué día va después del martes?",
+          "opciones": [
+            "Lunes",
+            "Jueves",
+            "Miércoles",
+            "Domingo"
+          ],
+          "correcta": 2,
+          "explicacion": "Después del martes sigue el miércoles."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuántos meses tiene un año?",
+          "opciones": [
+            "10",
+            "7",
+            "12",
+            "30"
+          ],
+          "correcta": 2,
+          "explicacion": "El año tiene 12 meses."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué mes viene después de junio?",
+          "opciones": [
+            "Mayo",
+            "Julio",
+            "Agosto",
+            "Enero"
+          ],
+          "correcta": 1,
+          "explicacion": "Después de junio sigue julio."
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../datos/modelos/modelos.dart';
+import '../../nucleo/nem.dart';
 import '../../nucleo/servicios.dart';
 import '../onboarding/pantalla_bienvenida.dart';
 
@@ -85,7 +86,7 @@ class _PantallaPerfilState extends State<PantallaPerfil> {
               ),
               const SizedBox(height: 8),
               Text(usuario.nombre, style: tema.textTheme.titleLarge),
-              Text('${usuario.grado}.º de ${_etiquetaNivel(usuario.nivel)}'),
+              Text(Nem.etiquetaGrado(usuario.grado)),
               const SizedBox(height: 16),
               const Divider(height: 1),
               ListTile(
@@ -108,7 +109,7 @@ class _PantallaPerfilState extends State<PantallaPerfil> {
               ListTile(
                 leading: const Icon(Icons.edit_outlined),
                 title: const Text('Editar mis datos'),
-                subtitle: const Text('Nombre, nivel, grado e idioma'),
+                subtitle: const Text('Nombre, grado e idioma'),
                 trailing: const Icon(Icons.chevron_right),
                 onTap: _editarDatos,
               ),
@@ -150,25 +151,12 @@ class _PantallaPerfilState extends State<PantallaPerfil> {
         const SizedBox(height: 24),
         Center(
           child: Text(
-            'SaberMóvil · versión 0.1',
+            'SaberMóvil · Primaria · Nueva Escuela Mexicana · versión 0.2',
             style: tema.textTheme.bodySmall,
           ),
         ),
       ],
     );
-  }
-
-  String _etiquetaNivel(String nivel) {
-    switch (nivel) {
-      case 'primaria':
-        return 'primaria';
-      case 'secundaria':
-        return 'secundaria';
-      case 'bachillerato':
-        return 'bachillerato';
-      default:
-        return nivel;
-    }
   }
 
   String _etiquetaIdioma(String idioma) {

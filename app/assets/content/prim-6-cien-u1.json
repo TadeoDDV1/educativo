@@ -1,13 +1,24 @@
 {
   "id": "prim-6-cien-u1",
   "titulo": "El agua y su ciclo",
-  "materia": "ciencias",
-  "grado": 6,
   "nivel": "primaria",
+  "grado": 6,
+  "fase": 5,
+  "campo": "saberes",
+  "contenido": "El agua: ciclo, cuidado y uso responsable",
+  "pda": [
+    "Explica el ciclo del agua y propone acciones para su cuidado en la comunidad."
+  ],
+  "ejesArticuladores": [
+    "vida_saludable",
+    "pensamiento_critico"
+  ],
   "objetivo": "Explicar el ciclo del agua y proponer acciones para cuidarla",
+  "fuente": "Plan de Estudio 2022 · Fase 5 (pendiente de cotejar con el Programa Sintético de la Fase 5)",
+  "estadoValidacion": "borrador",
   "lecciones": [
     {
-      "id": "l1",
+      "id": "prim-6-cien-u1-l1",
       "titulo": "El ciclo del agua",
       "orden": 1,
       "video": "media/prim-6-cien-u1-l1.mp4",
@@ -46,7 +57,7 @@
       ]
     },
     {
-      "id": "l2",
+      "id": "prim-6-cien-u1-l2",
       "titulo": "Cuidar el agua en mi comunidad",
       "orden": 2,
       "video": "media/prim-6-cien-u1-l2.mp4",

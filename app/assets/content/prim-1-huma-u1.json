@@ -1,0 +1,144 @@
+{
+  "id": "prim-1-huma-u1",
+  "titulo": "Mi familia y mi comunidad",
+  "nivel": "primaria",
+  "grado": 1,
+  "fase": 3,
+  "campo": "humano",
+  "contenido": "La comunidad como el espacio en el que se vive y se encuentra la escuela · Sentido de pertenencia a la familia y la comunidad",
+  "pda": [
+    "Reconoce los lugares de su comunidad y las actividades que en ellos se realizan.",
+    "Identifica que pertenece a una familia y a una comunidad, y que existen distintas formas de ser familia."
+  ],
+  "ejesArticuladores": [
+    "inclusion",
+    "interculturalidad_critica"
+  ],
+  "objetivo": "Reconocer los lugares y las personas de mi comunidad y lo que nos une.",
+  "fuente": "Programa Sintético de la Fase 3 (SEP, 2024)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-1-huma-u1-l1",
+      "titulo": "Lugares de mi comunidad",
+      "orden": 1,
+      "video": null,
+      "texto": "En la comunidad hay lugares donde hacemos distintas actividades: en la escuela aprendemos, en el mercado o tianguis compramos alimentos, en el centro de salud nos atienden si nos enfermamos y en la plaza nos reunimos. La comunidad la formamos todas las personas que vivimos en ella.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Dónde compramos frutas y verduras?",
+          "opciones": [
+            "En el mercado o tianguis",
+            "En la escuela",
+            "En el centro de salud",
+            "En el río"
+          ],
+          "correcta": 0,
+          "explicacion": "En el mercado o tianguis se venden alimentos."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "Si alguien se enferma, ¿a dónde puede ir?",
+          "opciones": [
+            "A la cancha",
+            "Al centro de salud",
+            "A la tienda de juguetes",
+            "Al campo"
+          ],
+          "correcta": 1,
+          "explicacion": "En el centro de salud o clínica atienden a las personas enfermas."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué lugar sirve para aprender y convivir con compañeros?",
+          "opciones": [
+            "La escuela",
+            "El molino",
+            "La carretera",
+            "El corral"
+          ],
+          "correcta": 0,
+          "explicacion": "En la escuela aprendemos y convivimos."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Quiénes forman la comunidad?",
+          "opciones": [
+            "Solo los maestros",
+            "Solo los niños",
+            "Todas las personas que vivimos en ella",
+            "Solo las autoridades"
+          ],
+          "correcta": 2,
+          "explicacion": "Todas y todos formamos la comunidad."
+        }
+      ]
+    },
+    {
+      "id": "prim-1-huma-u1-l2",
+      "titulo": "Todos somos parte",
+      "orden": 2,
+      "video": null,
+      "texto": "Las familias son diversas: algunas son grandes, otras pequeñas; hay niñas y niños que viven con sus abuelos, con mamá, con papá o con otras personas que los cuidan. Todas las familias valen. En muchas comunidades se trabaja en conjunto, por ejemplo en el tequio o la faena, para el bien de todos.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cómo son las familias?",
+          "opciones": [
+            "Todas son iguales",
+            "Son diversas y todas valen",
+            "Solo hay un tipo",
+            "Solo las grandes son familias"
+          ],
+          "correcta": 1,
+          "explicacion": "Hay muchas formas de ser familia y todas merecen respeto."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cómo puedes ayudar en casa?",
+          "opciones": [
+            "Poniendo la mesa o recogiendo mis juguetes",
+            "Haciendo berrinche",
+            "Tirando la ropa",
+            "Sin hacer nada"
+          ],
+          "correcta": 0,
+          "explicacion": "Cuando ayudamos, cuidamos a nuestra familia."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "El tequio o faena es…",
+          "opciones": [
+            "Un juego de pelota",
+            "Trabajo colectivo para el bien de la comunidad",
+            "Una comida",
+            "Una tarea de matemáticas"
+          ],
+          "correcta": 1,
+          "explicacion": "En el tequio las personas trabajan juntas para beneficio de todos."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "Una fiesta o tradición de la comunidad sirve para…",
+          "opciones": [
+            "Pelear",
+            "Convivir y recordar quiénes somos",
+            "Estar solos",
+            "Nada"
+          ],
+          "correcta": 1,
+          "explicacion": "Las tradiciones nos dan identidad y nos unen."
+        }
+      ]
+    }
+  ]
+}

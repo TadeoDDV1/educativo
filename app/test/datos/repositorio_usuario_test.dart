@@ -21,7 +21,6 @@ void main() {
       id: 'demo-1',
       nombre: 'Ana',
       grado: 3,
-      nivel: 'secundaria',
       idioma: 'lengua indígena',
     );
 
@@ -32,10 +31,25 @@ void main() {
     expect(cargado!.id, 'demo-1');
     expect(cargado.nombre, 'Ana');
     expect(cargado.grado, 3);
-    expect(cargado.nivel, 'secundaria');
+    expect(cargado.nivel, 'primaria');
     expect(cargado.idioma, 'lengua indígena');
 
     await repositorio.borrar();
     expect(await repositorio.cargar(), isNull);
+  });
+
+  test('un perfil antiguo de secundaria se ajusta a primaria', () async {
+    SharedPreferences.setMockInitialValues({
+      'usuario_id': 'viejo-1',
+      'usuario_nombre': 'Luis',
+      'usuario_grado': 9,
+      'usuario_nivel': 'secundaria',
+      'usuario_idioma': 'es',
+    });
+
+    final cargado = await RepositorioUsuario().cargar();
+    expect(cargado, isNotNull);
+    expect(cargado!.nivel, 'primaria');
+    expect(cargado.grado, 6);
   });
 }

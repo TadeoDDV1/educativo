@@ -1,0 +1,144 @@
+{
+  "id": "prim-3-huma-u1",
+  "titulo": "La escuela: convivir y aprender juntos",
+  "nivel": "primaria",
+  "grado": 3,
+  "fase": 4,
+  "campo": "humano",
+  "contenido": "La escuela como espacio de convivencia, colaboración y aprendizaje",
+  "pda": [
+    "Reconoce la escuela como un espacio para aprender con otras personas y colaborar.",
+    "Propone y practica acciones de colaboración y apoyo mutuo para una convivencia sana e incluyente."
+  ],
+  "ejesArticuladores": [
+    "inclusion",
+    "igualdad_genero"
+  ],
+  "objetivo": "Colaborar con mis compañeras y compañeros y hacer de la escuela un lugar seguro.",
+  "fuente": "Programa Sintético de la Fase 4 (SEP, 2024)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-3-huma-u1-l1",
+      "titulo": "Colaborar es aprender",
+      "orden": 1,
+      "video": null,
+      "texto": "En la escuela aprendemos mejor cuando colaboramos: cada persona aporta lo que sabe, escuchamos ideas distintas y nos ayudamos. Trabajar en equipo no es que una persona haga todo, sino repartir tareas y apoyarnos.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "Trabajar en equipo significa…",
+          "opciones": [
+            "Que una sola persona haga todo",
+            "Repartir tareas y apoyarnos",
+            "Copiar",
+            "No hablar"
+          ],
+          "correcta": 1,
+          "explicacion": "En equipo todos aportamos."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "Un compañero no entiende un ejercicio que tú ya sabes. ¿Qué haces?",
+          "opciones": [
+            "Me burlo",
+            "Le explico con paciencia",
+            "Lo ignoro",
+            "Le digo que es tonto"
+          ],
+          "correcta": 1,
+          "explicacion": "Ayudar a otros también nos ayuda a aprender."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "En tu equipo hay una compañera que habla una lengua indígena. Eso es…",
+          "opciones": [
+            "Un problema",
+            "Una riqueza para el grupo",
+            "Algo que hay que ocultar",
+            "Motivo de burla"
+          ],
+          "correcta": 1,
+          "explicacion": "La diversidad de lenguas enriquece el aprendizaje."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué tareas pueden hacer niñas y niños en el equipo?",
+          "opciones": [
+            "Solo los niños dirigen",
+            "Solo las niñas escriben",
+            "Todas y todos pueden hacer cualquier tarea",
+            "Nadie hace nada"
+          ],
+          "correcta": 2,
+          "explicacion": "Las tareas no dependen de ser niña o niño."
+        }
+      ]
+    },
+    {
+      "id": "prim-3-huma-u1-l2",
+      "titulo": "Una escuela segura para todos",
+      "orden": 2,
+      "video": null,
+      "texto": "Una escuela segura es aquella donde nadie es molestado, excluido ni lastimado. Si alguien sufre burlas o golpes de forma repetida (acoso escolar), debemos avisar a una persona adulta de confianza. Cuidar la escuela y sus materiales también es parte de convivir.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "Si ves que molestan a alguien todos los días, ¿qué haces?",
+          "opciones": [
+            "Aviso a una maestra o maestro",
+            "Me uno a las burlas",
+            "No digo nada nunca",
+            "Lo grabo para reírme"
+          ],
+          "correcta": 0,
+          "explicacion": "Avisar a un adulto ayuda a detener el acoso."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál acción hace la escuela más segura?",
+          "opciones": [
+            "Empujar en las escaleras",
+            "Respetar y cuidar a los demás",
+            "Rayar las paredes",
+            "Excluir a los nuevos"
+          ],
+          "correcta": 1,
+          "explicacion": "El respeto hace la escuela un lugar seguro."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "Cuidar los libros y materiales de la escuela…",
+          "opciones": [
+            "No importa",
+            "Permite que otras personas también los usen",
+            "Es solo tarea del conserje",
+            "Es aburrido"
+          ],
+          "correcta": 1,
+          "explicacion": "Los materiales son de todos."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "Llega un compañero nuevo de otro estado. ¿Qué haces?",
+          "opciones": [
+            "Lo invito a mi equipo",
+            "Lo dejo solo",
+            "Me burlo de su forma de hablar",
+            "Le escondo sus cosas"
+          ],
+          "correcta": 0,
+          "explicacion": "Incluir a quien llega es parte de convivir."
+        }
+      ]
+    }
+  ]
+}

@@ -1,13 +1,24 @@
 {
   "id": "prim-6-cien-u2",
   "titulo": "Seres vivos y ecosistemas",
-  "materia": "ciencias",
-  "grado": 6,
   "nivel": "primaria",
+  "grado": 6,
+  "fase": 5,
+  "campo": "saberes",
+  "contenido": "Ecosistemas: interacciones entre seres vivos y su ambiente",
+  "pda": [
+    "Describe relaciones alimentarias en los ecosistemas y la importancia de su conservación."
+  ],
+  "ejesArticuladores": [
+    "vida_saludable",
+    "interculturalidad_critica"
+  ],
   "objetivo": "Reconocer las características de los seres vivos y las relaciones que forman los ecosistemas",
+  "fuente": "Plan de Estudio 2022 · Fase 5 (pendiente de cotejar con el Programa Sintético de la Fase 5)",
+  "estadoValidacion": "borrador",
   "lecciones": [
     {
-      "id": "l1",
+      "id": "prim-6-cien-u2-l1",
       "titulo": "Los seres vivos y su ambiente",
       "orden": 1,
       "video": "media/prim-6-cien-u2-l1.mp4",
@@ -21,7 +32,12 @@
           "id": "e1",
           "tipo": "opcion_multiple",
           "pregunta": "¿Qué necesitan todos los seres vivos para vivir?",
-          "opciones": ["Agua, aire y alimento", "Solo luz", "Solo tierra", "Nada especial"],
+          "opciones": [
+            "Agua, aire y alimento",
+            "Solo luz",
+            "Solo tierra",
+            "Nada especial"
+          ],
           "correcta": 0,
           "explicacion": "El agua, el aire y el alimento son necesidades básicas de todo ser vivo."
         },
@@ -29,14 +45,19 @@
           "id": "e2",
           "tipo": "opcion_multiple",
           "pregunta": "¿Qué son los animales herbívoros?",
-          "opciones": ["Los que comen plantas", "Los que comen carne", "Los que comen piedras", "Los que no comen"],
+          "opciones": [
+            "Los que comen plantas",
+            "Los que comen carne",
+            "Los que comen piedras",
+            "Los que no comen"
+          ],
           "correcta": 0,
           "explicacion": "Herbívoro significa que se alimenta de plantas, como la vaca o el conejo."
         }
       ]
     },
     {
-      "id": "l2",
+      "id": "prim-6-cien-u2-l2",
       "titulo": "Ecosistemas de mi región y su cuidado",
       "orden": 2,
       "video": "media/prim-6-cien-u2-l2.mp4",

@@ -1,0 +1,143 @@
+{
+  "id": "prim-3-sabe-u2",
+  "titulo": "Multiplicar y dividir",
+  "nivel": "primaria",
+  "grado": 3,
+  "fase": 4,
+  "campo": "saberes",
+  "contenido": "Multiplicación y división, su relación como operaciones inversas",
+  "pda": [
+    "Resuelve problemas de multiplicación con números de hasta dos cifras usando distintos procedimientos.",
+    "Resuelve problemas de división (reparto y agrupamiento) y reconoce que la división es la operación inversa de la multiplicación."
+  ],
+  "ejesArticuladores": [
+    "pensamiento_critico"
+  ],
+  "objetivo": "Resolver problemas de multiplicar y repartir en situaciones de la comunidad.",
+  "fuente": "Programa Sintético de la Fase 4 (SEP, 2024)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-3-sabe-u2-l1",
+      "titulo": "Multiplicar en la vida diaria",
+      "orden": 1,
+      "video": null,
+      "texto": "Multiplicar sirve para contar rápido grupos iguales. Si un paquete trae 6 tortillas y compras 5 paquetes, tienes 5 × 6 = 30 tortillas. Aprender las tablas te ayuda a calcular mentalmente.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "Un paquete trae 6 tortillas. ¿Cuántas hay en 5 paquetes?",
+          "opciones": [
+            "11",
+            "30",
+            "56",
+            "25"
+          ],
+          "correcta": 1,
+          "explicacion": "5 × 6 = 30."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "7 × 8 = ___",
+          "opciones": [
+            "54",
+            "56",
+            "48",
+            "64"
+          ],
+          "correcta": 1,
+          "explicacion": "7 × 8 = 56."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "En el huerto hay 4 surcos con 9 plantas cada uno. ¿Cuántas plantas hay?",
+          "opciones": [
+            "36",
+            "13",
+            "49",
+            "32"
+          ],
+          "correcta": 0,
+          "explicacion": "4 × 9 = 36."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es igual a 3 × 5?",
+          "opciones": [
+            "5 + 3",
+            "5 + 5 + 5",
+            "3 + 3",
+            "35"
+          ],
+          "correcta": 1,
+          "explicacion": "Tres veces cinco: 5 + 5 + 5 = 15."
+        }
+      ]
+    },
+    {
+      "id": "prim-3-sabe-u2-l2",
+      "titulo": "Repartir en partes iguales",
+      "orden": 2,
+      "video": null,
+      "texto": "Dividir es repartir en partes iguales o formar grupos. Si 24 semillas se reparten en 4 macetas, cada una recibe 24 ÷ 4 = 6. Para comprobar una división, multiplicamos: 4 × 6 = 24.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "24 semillas se reparten en 4 macetas. ¿Cuántas en cada una?",
+          "opciones": [
+            "6",
+            "20",
+            "28",
+            "8"
+          ],
+          "correcta": 0,
+          "explicacion": "24 ÷ 4 = 6."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cómo compruebas que 35 ÷ 5 = 7?",
+          "opciones": [
+            "35 + 5",
+            "5 × 7 = 35",
+            "35 − 7",
+            "7 + 5"
+          ],
+          "correcta": 1,
+          "explicacion": "La multiplicación es la operación inversa de la división."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "18 niñas y niños forman equipos de 3. ¿Cuántos equipos hay?",
+          "opciones": [
+            "6",
+            "15",
+            "21",
+            "9"
+          ],
+          "correcta": 0,
+          "explicacion": "18 ÷ 3 = 6 equipos."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "40 ÷ 8 = ___",
+          "opciones": [
+            "5",
+            "6",
+            "32",
+            "48"
+          ],
+          "correcta": 0,
+          "explicacion": "8 × 5 = 40, entonces 40 ÷ 8 = 5."
+        }
+      ]
+    }
+  ]
+}
