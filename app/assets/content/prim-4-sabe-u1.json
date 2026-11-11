@@ -1,0 +1,144 @@
+{
+  "id": "prim-4-sabe-u1",
+  "titulo": "La Tierra, la Luna y el Sol",
+  "nivel": "primaria",
+  "grado": 4,
+  "fase": 4,
+  "campo": "saberes",
+  "contenido": "Sistema Tierra-Luna-Sol: interacciones, cambios y regularidades; diversas explicaciones acerca del movimiento de estos astros y su relación con algunos fenómenos naturales",
+  "pda": [
+    "Describe los movimientos de rotación y traslación de la Tierra y su relación con el día, la noche y el año.",
+    "Reconoce las fases de la Luna y explicaciones de distintas culturas sobre el movimiento de los astros."
+  ],
+  "ejesArticuladores": [
+    "pensamiento_critico",
+    "interculturalidad_critica"
+  ],
+  "objetivo": "Explicar el día, la noche, el año y las fases de la Luna.",
+  "fuente": "Programa Sintético de la Fase 4 (SEP, 2024)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-4-sabe-u1-l1",
+      "titulo": "Rotación y traslación",
+      "orden": 1,
+      "video": null,
+      "texto": "La Tierra gira sobre sí misma (rotación) y tarda un día, unas 24 horas: por eso hay día y noche. También da una vuelta alrededor del Sol (traslación) y tarda un año, unos 365 días. La Luna gira alrededor de la Tierra.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Por qué hay día y noche?",
+          "opciones": [
+            "Porque el Sol se apaga",
+            "Porque la Tierra gira sobre sí misma",
+            "Porque la Luna tapa al Sol",
+            "Por las nubes"
+          ],
+          "correcta": 1,
+          "explicacion": "La rotación hace que una parte de la Tierra quede hacia el Sol y otra no."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuánto tarda la Tierra en dar una vuelta alrededor del Sol?",
+          "opciones": [
+            "Un día",
+            "Un mes",
+            "Un año",
+            "Una semana"
+          ],
+          "correcta": 2,
+          "explicacion": "La traslación dura aproximadamente 365 días."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Alrededor de qué astro gira la Luna?",
+          "opciones": [
+            "Del Sol",
+            "De la Tierra",
+            "De Marte",
+            "De ninguno"
+          ],
+          "correcta": 1,
+          "explicacion": "La Luna es el satélite natural de la Tierra."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "El movimiento de la Tierra sobre su propio eje se llama…",
+          "opciones": [
+            "Traslación",
+            "Rotación",
+            "Eclipse",
+            "Fase"
+          ],
+          "correcta": 1,
+          "explicacion": "Rotación es girar sobre sí misma."
+        }
+      ]
+    },
+    {
+      "id": "prim-4-sabe-u1-l2",
+      "titulo": "Las fases de la Luna",
+      "orden": 2,
+      "video": null,
+      "texto": "La Luna no tiene luz propia: refleja la luz del Sol. Según su posición, vemos distintas partes iluminadas: luna nueva, cuarto creciente, luna llena y cuarto menguante. El ciclo dura unos 29 días. Muchos pueblos originarios observaron la Luna para organizar la siembra y sus calendarios.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "La Luna brilla porque…",
+          "opciones": [
+            "Tiene luz propia",
+            "Refleja la luz del Sol",
+            "Es de fuego",
+            "La iluminan las estrellas"
+          ],
+          "correcta": 1,
+          "explicacion": "La Luna refleja la luz que le llega del Sol."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "Cuando vemos la Luna completamente iluminada es…",
+          "opciones": [
+            "Luna nueva",
+            "Luna llena",
+            "Cuarto menguante",
+            "Eclipse"
+          ],
+          "correcta": 1,
+          "explicacion": "En luna llena vemos toda su cara iluminada."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuánto dura aproximadamente el ciclo de fases de la Luna?",
+          "opciones": [
+            "7 días",
+            "29 días",
+            "365 días",
+            "1 día"
+          ],
+          "correcta": 1,
+          "explicacion": "El ciclo lunar dura unos 29 días y medio."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Para qué observaban la Luna muchos pueblos originarios?",
+          "opciones": [
+            "Para organizar la siembra y sus calendarios",
+            "Para nada",
+            "Solo para jugar",
+            "Para hacer tortillas"
+          ],
+          "correcta": 0,
+          "explicacion": "La observación del cielo ayudó a crear calendarios agrícolas."
+        }
+      ]
+    }
+  ]
+}

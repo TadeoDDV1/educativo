@@ -4,7 +4,9 @@ class Constantes {
 
   static const String nombreApp = 'SaberMóvil';
   static const String rutaManifest = 'assets/content/manifest.json';
-  static const String nivelDemo = 'primaria';
+  /// La app atiende solo educación primaria (1.º a 6.º), conforme a la
+  /// Nueva Escuela Mexicana. Ver `nucleo/nem.dart`.
+  static const String nivel = 'primaria';
   static const int gradoDemo = 6;
 
   /// Dirección del servidor de sincronización.

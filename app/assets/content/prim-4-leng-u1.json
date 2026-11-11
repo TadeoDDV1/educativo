@@ -1,0 +1,206 @@
+{
+  "id": "prim-4-leng-u1",
+  "titulo": "Escribo mejor: acentos, homófonas y puntuación",
+  "nivel": "primaria",
+  "grado": 4,
+  "fase": 4,
+  "campo": "lenguajes",
+  "contenido": "Comprensión y producción de textos instructivos para realizar actividades escolares y participar en diversos juegos · Comprensión y producción de resúmenes",
+  "pda": [
+    "Reflexiona sobre la ortografía de palabras homónimas.",
+    "Emplea signos de puntuación como el punto, la coma y los dos puntos.",
+    "Identifica verbos en infinitivo o imperativo y términos secuenciales (primero, después, finalmente) en los instructivos."
+  ],
+  "ejesArticuladores": [
+    "apropiacion_culturas",
+    "pensamiento_critico"
+  ],
+  "objetivo": "Acentuar correctamente, distinguir palabras que suenan igual y puntuar mis textos.",
+  "fuente": "Programa Sintético de la Fase 4 (SEP, 2024)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-4-leng-u1-l1",
+      "titulo": "¿Dónde va el acento?",
+      "orden": 1,
+      "video": null,
+      "texto": "En cada palabra hay una sílaba que suena más fuerte: la sílaba tónica. Si es la última, la palabra es aguda (café, canción); si es la penúltima, es grave (mesa, árbol); si es la antepenúltima, es esdrújula (pájaro, México). Las agudas llevan tilde si terminan en n, s o vocal; las graves, si NO terminan en n, s o vocal; las esdrújulas siempre llevan tilde.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la sílaba tónica de «canción»?",
+          "opciones": [
+            "can",
+            "ción",
+            "ca",
+            "ón"
+          ],
+          "correcta": 1,
+          "explicacion": "can-CIÓN: suena más fuerte la última sílaba."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué palabras llevan tilde siempre?",
+          "opciones": [
+            "Las agudas",
+            "Las graves",
+            "Las esdrújulas",
+            "Ninguna"
+          ],
+          "correcta": 2,
+          "explicacion": "Todas las esdrújulas llevan tilde: pájaro, México, música."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál palabra es aguda?",
+          "opciones": [
+            "mesa",
+            "café",
+            "árbol",
+            "pájaro"
+          ],
+          "correcta": 1,
+          "explicacion": "ca-FÉ: la tónica es la última sílaba."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál está bien escrita?",
+          "opciones": [
+            "lapiz",
+            "lápiz",
+            "lapíz",
+            "lápíz"
+          ],
+          "correcta": 1,
+          "explicacion": "Lápiz es grave y termina en z (no en n, s o vocal): lleva tilde."
+        }
+      ]
+    },
+    {
+      "id": "prim-4-leng-u1-l2",
+      "titulo": "Palabras que suenan igual",
+      "orden": 2,
+      "video": null,
+      "texto": "Algunas palabras suenan igual pero se escriben distinto y significan cosas diferentes: tuvo (del verbo tener) y tubo (objeto hueco); haya (del verbo haber), halla (del verbo hallar, encontrar) y allá (lugar lejano); votar (elegir) y botar (tirar o rebotar). El contexto nos dice cuál usar.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "Ojalá que no ___ lluvia el día de la fiesta.",
+          "opciones": [
+            "halla",
+            "haya",
+            "allá",
+            "aya"
+          ],
+          "correcta": 1,
+          "explicacion": "Haya, del verbo haber."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "Mi hermana ___ un perrito el año pasado.",
+          "opciones": [
+            "tubo",
+            "tuvo",
+            "tuvó",
+            "tubó"
+          ],
+          "correcta": 1,
+          "explicacion": "Tuvo, del verbo tener."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "El agua llega a la casa por un ___.",
+          "opciones": [
+            "tuvo",
+            "tubo",
+            "tuvó",
+            "tobo"
+          ],
+          "correcta": 1,
+          "explicacion": "Tubo es el objeto hueco por donde pasa el agua."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "Las personas adultas van a ___ para elegir a la autoridad.",
+          "opciones": [
+            "botar",
+            "votar",
+            "botár",
+            "vótar"
+          ],
+          "correcta": 1,
+          "explicacion": "Votar es elegir; botar es tirar o rebotar."
+        }
+      ]
+    },
+    {
+      "id": "prim-4-leng-u1-l3",
+      "titulo": "Punto, coma y dos puntos",
+      "orden": 3,
+      "video": null,
+      "texto": "El punto y seguido separa oraciones de un mismo párrafo; el punto y aparte cierra un párrafo; el punto final termina el texto. Los dos puntos anuncian una lista o una explicación, como en los instructivos: «Materiales: masa, agua y sal». En los instructivos también usamos palabras como primero, después y finalmente.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "Después de «Necesitas lo siguiente» y antes de una lista usamos…",
+          "opciones": [
+            "punto final",
+            "dos puntos",
+            "signos de exclamación",
+            "guion"
+          ],
+          "correcta": 1,
+          "explicacion": "Los dos puntos anuncian una lista."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "Para terminar un párrafo y empezar otro usamos…",
+          "opciones": [
+            "punto y aparte",
+            "coma",
+            "punto y seguido",
+            "dos puntos"
+          ],
+          "correcta": 0,
+          "explicacion": "El punto y aparte cierra un párrafo."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué palabra indica el último paso de un instructivo?",
+          "opciones": [
+            "Primero",
+            "Después",
+            "Finalmente",
+            "Antes"
+          ],
+          "correcta": 2,
+          "explicacion": "Finalmente indica el último paso."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "En «Mezcla la masa con agua», «Mezcla» es un verbo en…",
+          "opciones": [
+            "Imperativo (da una instrucción)",
+            "Pasado",
+            "Futuro",
+            "No es verbo"
+          ],
+          "correcta": 0,
+          "explicacion": "Los instructivos usan verbos que indican qué hacer."
+        }
+      ]
+    }
+  ]
+}

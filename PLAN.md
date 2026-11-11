@@ -1,11 +1,12 @@
 # SaberMóvil — Plan de trabajo (Flutter + SQLite)
 
-Plataforma educativa gamificada, offline-first y bilingüe para primaria, secundaria y bachillerato en comunidades rurales e indígenas.
+Plataforma educativa gamificada, offline-first y bilingüe para **educación primaria (1.º a 6.º)** en comunidades rurales e indígenas, alineada a la **Nueva Escuela Mexicana** (Plan de Estudio 2022: fases, Campos formativos, contenidos, PDA y ejes articuladores).
 
 - **Proyecto Flutter:** `app/` (nombre `sabermovil`, org `com.raicesdelsaber`)
 - **Stack base:** Flutter 3.44 · Dart 3.12 · SQLite (`sqflite`) · almacenamiento local de archivos · sincronización opcional
 - **Arquitectura:** 3 capas simples — `pantallas` → `logica` → `datos` (ver `app/docs/arquitectura.md`)
-- **Meta del MVP:** 1 grado (6.º de primaria) · 3 materias · 2 unidades por materia · video + ejercicios + progreso + insignias · **funciona 100 % sin internet**
+- **Meta del MVP:** 1.º a 6.º de primaria · 4 Campos formativos por grado · video + ejercicios + progreso + insignias · **funciona 100 % sin internet**
+- **Currículo:** ver `app/docs/contenido/mapa-curricular-nem.md` y el contrato v2 en `app/docs/contratos-datos.md`
 
 ## Estado actual (arranque)
 

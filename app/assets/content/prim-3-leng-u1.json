@@ -1,0 +1,206 @@
+{
+  "id": "prim-3-leng-u1",
+  "titulo": "Escribo mejor: sílabas, mayúsculas, b y v",
+  "nivel": "primaria",
+  "grado": 3,
+  "fase": 4,
+  "campo": "lenguajes",
+  "contenido": "Descripción de personas, lugares, hechos y procesos",
+  "pda": [
+    "Usa mayúsculas al inicio de las oraciones y de los nombres propios.",
+    "Reflexiona sobre el uso de la coma al enumerar cosas o elementos y la emplea.",
+    "Planea, escribe, revisa y corrige textos en los que describe hechos en orden cronológico."
+  ],
+  "ejesArticuladores": [
+    "apropiacion_culturas",
+    "pensamiento_critico"
+  ],
+  "objetivo": "Revisar mis textos: separar sílabas, usar mayúsculas, b, v y la coma al enumerar.",
+  "fuente": "Programa Sintético de la Fase 4 (SEP, 2024)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-3-leng-u1-l1",
+      "titulo": "Sílabas y mayúsculas",
+      "orden": 1,
+      "video": null,
+      "texto": "Las palabras se dividen en sílabas, que son los golpes de voz: ma-ri-po-sa tiene cuatro. Separar sílabas ayuda a escribir bien. Usamos mayúscula al empezar una oración, después de un punto y en los nombres propios de personas, lugares, ríos y montañas.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuántas sílabas tiene «mariposa»?",
+          "opciones": [
+            "3",
+            "4",
+            "5",
+            "2"
+          ],
+          "correcta": 1,
+          "explicacion": "ma-ri-po-sa: cuatro sílabas."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál separación es correcta?",
+          "opciones": [
+            "cam-ino",
+            "ca-mi-no",
+            "c-ami-no",
+            "cami-no"
+          ],
+          "correcta": 1,
+          "explicacion": "ca-mi-no: cada sílaba lleva una vocal."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "En «el domingo fuimos a puebla con mi tía rosa», ¿qué palabras llevan mayúscula?",
+          "opciones": [
+            "domingo y tía",
+            "El, Puebla y Rosa",
+            "fuimos y con",
+            "Ninguna"
+          ],
+          "correcta": 1,
+          "explicacion": "Inicio de oración (El) y nombres propios (Puebla, Rosa)."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál está bien escrita?",
+          "opciones": [
+            "el popocatépetl es un volcán.",
+            "El Popocatépetl es un volcán.",
+            "el Popocatépetl Es un Volcán.",
+            "El popocatépetl es un Volcán."
+          ],
+          "correcta": 1,
+          "explicacion": "Mayúscula al inicio y en el nombre propio del volcán."
+        }
+      ]
+    },
+    {
+      "id": "prim-3-leng-u1-l2",
+      "titulo": "¿B o V?",
+      "orden": 2,
+      "video": null,
+      "texto": "La b y la v suenan igual, pero hay pistas: después de m va b (cambio, hombre) y después de n va v (invierno, enviar). Los verbos que terminan en -bir se escriben con b (escribir, recibir), menos hervir, servir y vivir. Las terminaciones -aba, -abas, -ábamos van con b: cantaba, jugábamos.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál está bien escrita?",
+          "opciones": [
+            "canvio",
+            "cambio",
+            "camvio",
+            "canbio"
+          ],
+          "correcta": 1,
+          "explicacion": "Después de m siempre va b: cambio."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál está bien escrita?",
+          "opciones": [
+            "imbierno",
+            "invierno",
+            "inbierno",
+            "imvierno"
+          ],
+          "correcta": 1,
+          "explicacion": "Después de n va v: invierno."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "Ayer mi abuelo canta___ en la fiesta.",
+          "opciones": [
+            "ba",
+            "va",
+            "bba",
+            "pa"
+          ],
+          "correcta": 0,
+          "explicacion": "Las terminaciones -aba van con b: cantaba."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "Completa: escri___ir",
+          "opciones": [
+            "v",
+            "b",
+            "bv",
+            "p"
+          ],
+          "correcta": 1,
+          "explicacion": "Los verbos en -bir van con b: escribir (excepto hervir, servir y vivir)."
+        }
+      ]
+    },
+    {
+      "id": "prim-3-leng-u1-l3",
+      "titulo": "La coma al enumerar",
+      "orden": 3,
+      "video": null,
+      "texto": "Cuando escribimos una lista dentro de una oración, separamos los elementos con coma. Antes de la última palabra, en lugar de coma, usamos «y» u «o»: Compré tomate, cebolla, chile y cilantro.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál oración usa bien la coma?",
+          "opciones": [
+            "Compré, tomate cebolla chile y cilantro.",
+            "Compré tomate, cebolla, chile y cilantro.",
+            "Compré tomate cebolla, chile, y, cilantro.",
+            "Compré tomate cebolla chile cilantro."
+          ],
+          "correcta": 1,
+          "explicacion": "La coma separa los elementos y antes del último va «y»."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "En una lista, antes del último elemento usamos…",
+          "opciones": [
+            "coma",
+            "«y» u «o»",
+            "punto",
+            "dos comas"
+          ],
+          "correcta": 1,
+          "explicacion": "Antes del último elemento usamos «y» u «o» en lugar de coma."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Para qué sirve la coma al enumerar?",
+          "opciones": [
+            "Para terminar el texto",
+            "Para separar los elementos de una lista",
+            "Para preguntar",
+            "Para nada"
+          ],
+          "correcta": 1,
+          "explicacion": "Separa cada elemento de la lista."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Dónde falta una coma? «En la milpa hay maíz frijol y calabaza.»",
+          "opciones": [
+            "Después de «maíz»",
+            "Después de «milpa»",
+            "Después de «hay»",
+            "No falta"
+          ],
+          "correcta": 0,
+          "explicacion": "maíz, frijol y calabaza."
+        }
+      ]
+    }
+  ]
+}

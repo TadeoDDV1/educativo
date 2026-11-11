@@ -1,0 +1,143 @@
+{
+  "id": "prim-5-sabe-u1",
+  "titulo": "Números decimales",
+  "nivel": "primaria",
+  "grado": 5,
+  "fase": 5,
+  "campo": "saberes",
+  "contenido": "Estudio de los números",
+  "pda": [
+    "Lee, escribe y compara números decimales en situaciones de compra y medición.",
+    "Relaciona fracciones decimales (décimos, centésimos) con su escritura decimal."
+  ],
+  "ejesArticuladores": [
+    "pensamiento_critico"
+  ],
+  "objetivo": "Usar decimales para comprar, medir y comparar.",
+  "fuente": "Plan de Estudio 2022 · Fase 5 (pendiente de cotejar con el Programa Sintético de la Fase 5)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-5-sabe-u1-l1",
+      "titulo": "Décimos y centésimos",
+      "orden": 1,
+      "video": null,
+      "texto": "Los números decimales sirven para expresar partes de una unidad: 0.5 es cinco décimos (la mitad), 0.25 es veinticinco centésimos (un cuarto). Los usamos con el dinero: $12.50 son doce pesos con cincuenta centavos.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cómo se escribe «cinco décimos»?",
+          "opciones": [
+            "5.0",
+            "0.5",
+            "0.05",
+            "50"
+          ],
+          "correcta": 1,
+          "explicacion": "Cinco décimos es 0.5."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "$12.50 son…",
+          "opciones": [
+            "Doce pesos con cinco centavos",
+            "Doce pesos con cincuenta centavos",
+            "Ciento veinticinco pesos",
+            "Un peso"
+          ],
+          "correcta": 1,
+          "explicacion": "El .50 son cincuenta centavos."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "0.25 es igual a…",
+          "opciones": [
+            "1/4",
+            "1/2",
+            "2/5",
+            "25"
+          ],
+          "correcta": 0,
+          "explicacion": "25 centésimos = 1/4."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué número es igual a 3/10?",
+          "opciones": [
+            "0.3",
+            "3.10",
+            "0.03",
+            "30"
+          ],
+          "correcta": 0,
+          "explicacion": "Tres décimos se escribe 0.3."
+        }
+      ]
+    },
+    {
+      "id": "prim-5-sabe-u1-l2",
+      "titulo": "Comparar y sumar decimales",
+      "orden": 2,
+      "video": null,
+      "texto": "Para comparar decimales, alineamos el punto y comparamos cifra por cifra: 0.8 > 0.75 porque 8 décimos son más que 7 décimos. Para sumar, también alineamos el punto: 1.50 + 2.25 = 3.75.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es mayor?",
+          "opciones": [
+            "0.75",
+            "0.8",
+            "Son iguales",
+            "No se puede saber"
+          ],
+          "correcta": 1,
+          "explicacion": "0.80 > 0.75."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "1.50 + 2.25 = ___",
+          "opciones": [
+            "3.75",
+            "3.30",
+            "4.0",
+            "375"
+          ],
+          "correcta": 0,
+          "explicacion": "Alineando el punto: 3.75."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "Un kilo de jitomate cuesta $24.50 y uno de cebolla $18.00. ¿Cuánto pagas por ambos?",
+          "opciones": [
+            "$42.50",
+            "$41.50",
+            "$6.50",
+            "$43.00"
+          ],
+          "correcta": 0,
+          "explicacion": "24.50 + 18.00 = 42.50."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué medida es más larga?",
+          "opciones": [
+            "1.2 m",
+            "1.15 m",
+            "Iguales",
+            "0.9 m"
+          ],
+          "correcta": 0,
+          "explicacion": "1.20 m es más que 1.15 m."
+        }
+      ]
+    }
+  ]
+}

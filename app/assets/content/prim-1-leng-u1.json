@@ -1,0 +1,145 @@
+{
+  "id": "prim-1-leng-u1",
+  "titulo": "Mi nombre, las letras y las vocales",
+  "nivel": "primaria",
+  "grado": 1,
+  "fase": 3,
+  "campo": "lenguajes",
+  "contenido": "Escritura de nombres en la lengua materna · Uso de convenciones de la escritura presentes en la cotidianeidad",
+  "pda": [
+    "Escribe su nombre y lo compara con los nombres de sus compañeros; identifica nombres más largos o cortos y los que empiezan con la misma letra.",
+    "Distingue letras de números u otros signos y reconoce que se lee y escribe de izquierda a derecha y de arriba abajo.",
+    "Asocia los sonidos vocálicos con sus letras correspondientes."
+  ],
+  "ejesArticuladores": [
+    "apropiacion_culturas",
+    "inclusion"
+  ],
+  "objetivo": "Reconocer las letras de mi nombre y las vocales en palabras de mi comunidad.",
+  "fuente": "Programa Sintético de la Fase 3 (SEP, 2024)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-1-leng-u1-l1",
+      "titulo": "Mi nombre se escribe con letras",
+      "orden": 1,
+      "video": null,
+      "texto": "Tu nombre es una palabra muy especial: dice quién eres. Se escribe con letras y lo usamos para marcar nuestros cuadernos y trabajos. Las letras no son números: A, M y S son letras; 3 y 7 son números. En español leemos y escribimos de izquierda a derecha y de arriba abajo.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de estos es una letra?",
+          "opciones": [
+            "7",
+            "A",
+            "+",
+            "3"
+          ],
+          "correcta": 1,
+          "explicacion": "La A es una letra; 7 y 3 son números y + es un signo."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Con qué letra empieza el nombre MARÍA?",
+          "opciones": [
+            "A",
+            "R",
+            "M",
+            "S"
+          ],
+          "correcta": 2,
+          "explicacion": "MARÍA empieza con M."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál nombre es el más largo?",
+          "opciones": [
+            "Ana",
+            "Guadalupe",
+            "Luis",
+            "Eva"
+          ],
+          "correcta": 1,
+          "explicacion": "Guadalupe tiene 9 letras; es el más largo."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Hacia dónde leemos en español?",
+          "opciones": [
+            "De derecha a izquierda",
+            "De abajo hacia arriba",
+            "De izquierda a derecha",
+            "En cualquier orden"
+          ],
+          "correcta": 2,
+          "explicacion": "En español leemos de izquierda a derecha y de arriba abajo."
+        }
+      ]
+    },
+    {
+      "id": "prim-1-leng-u1-l2",
+      "titulo": "Las vocales",
+      "orden": 2,
+      "video": null,
+      "texto": "En español hay cinco vocales: a, e, i, o, u. Están en casi todas las palabras: m-i-l-p-a, e-l-o-t-e, t-o-r-t-i-ll-a. Si dices una palabra despacio, puedes escuchar sus vocales.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de estas letras es una vocal?",
+          "opciones": [
+            "m",
+            "t",
+            "o",
+            "s"
+          ],
+          "correcta": 2,
+          "explicacion": "La o es una de las cinco vocales: a, e, i, o, u."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Con qué vocal empieza la palabra «elote»?",
+          "opciones": [
+            "a",
+            "e",
+            "i",
+            "u"
+          ],
+          "correcta": 1,
+          "explicacion": "e-lo-te empieza con e."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué vocal falta? m _ l p a",
+          "opciones": [
+            "a",
+            "o",
+            "i",
+            "e"
+          ],
+          "correcta": 2,
+          "explicacion": "La palabra es milpa: m-i-l-p-a."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuántas vocales tiene el español?",
+          "opciones": [
+            "3",
+            "5",
+            "7",
+            "10"
+          ],
+          "correcta": 1,
+          "explicacion": "Son cinco: a, e, i, o, u."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "id": "prim-1-sabe-u1",
+  "titulo": "Contamos, juntamos y quitamos",
+  "nivel": "primaria",
+  "grado": 1,
+  "fase": 3,
+  "campo": "saberes",
+  "contenido": "Estudio de los números · Construcción de la noción de suma y resta, y su relación como operaciones inversas",
+  "pda": [
+    "Utiliza los símbolos «<», «>» o «=» para comparar u ordenar dos números.",
+    "Reconoce, en situaciones de agregar, quitar, juntar, comparar y completar, que la suma es el total de dos o más cantidades y la resta la pérdida de elementos en una colección.",
+    "Resuelve problemas de su contexto con sumas o restas de hasta dos dígitos, usando material concreto o dibujos."
+  ],
+  "ejesArticuladores": [
+    "pensamiento_critico",
+    "vida_saludable"
+  ],
+  "objetivo": "Contar, comparar y resolver problemas de juntar y quitar con situaciones de mi comunidad.",
+  "fuente": "Programa Sintético de la Fase 3 (SEP, 2024)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-1-sabe-u1-l1",
+      "titulo": "Contar y comparar",
+      "orden": 1,
+      "video": null,
+      "texto": "Contamos para saber cuántas cosas hay. Para comparar dos cantidades usamos signos: > significa «mayor que», < significa «menor que» y = significa «igual a». Por ejemplo: 12 > 9 porque doce es más que nueve.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "En el corral hay 8 gallinas y 5 pollitos. ¿De qué hay más?",
+          "opciones": [
+            "Pollitos",
+            "Gallinas",
+            "Hay igual",
+            "No se sabe"
+          ],
+          "correcta": 1,
+          "explicacion": "8 es mayor que 5, así que hay más gallinas."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué número sigue? 17, 18, 19, ___",
+          "opciones": [
+            "21",
+            "10",
+            "20",
+            "29"
+          ],
+          "correcta": 2,
+          "explicacion": "Después del 19 viene el 20."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué signo va en 12 ___ 9?",
+          "opciones": [
+            ">",
+            "<",
+            "="
+          ],
+          "correcta": 0,
+          "explicacion": "12 es mayor que 9, por eso usamos >."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué número es menor?",
+          "opciones": [
+            "15",
+            "51",
+            "25",
+            "50"
+          ],
+          "correcta": 0,
+          "explicacion": "15 es el más pequeño de todos."
+        }
+      ]
+    },
+    {
+      "id": "prim-1-sabe-u1-l2",
+      "titulo": "Juntar y quitar",
+      "orden": 2,
+      "video": null,
+      "texto": "Cuando juntamos cosas, sumamos (+). Cuando quitamos, restamos (−). Si tengo 6 elotes y me dan 3, junto: 6 + 3 = 9. Si había 10 tortillas y nos comimos 4, quito: 10 − 4 = 6. La resta deshace la suma: 9 − 3 = 6.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "Tienes 6 elotes y tu abuela te da 3 más. ¿Cuántos tienes?",
+          "opciones": [
+            "3",
+            "9",
+            "8",
+            "63"
+          ],
+          "correcta": 1,
+          "explicacion": "Juntamos: 6 + 3 = 9."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "Había 10 tortillas y se comieron 4. ¿Cuántas quedan?",
+          "opciones": [
+            "14",
+            "4",
+            "6",
+            "5"
+          ],
+          "correcta": 2,
+          "explicacion": "Quitamos: 10 − 4 = 6."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué signo usamos para juntar cantidades?",
+          "opciones": [
+            "−",
+            "+",
+            "=",
+            "<"
+          ],
+          "correcta": 1,
+          "explicacion": "El signo + indica que juntamos o sumamos."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "7 + 2 = ___",
+          "opciones": [
+            "5",
+            "9",
+            "72",
+            "8"
+          ],
+          "correcta": 1,
+          "explicacion": "Siete más dos son nueve."
+        }
+      ]
+    }
+  ]
+}

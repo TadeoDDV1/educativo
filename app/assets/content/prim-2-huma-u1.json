@@ -1,0 +1,144 @@
+{
+  "id": "prim-2-huma-u1",
+  "titulo": "Me muevo, me cuido y reconozco mis emociones",
+  "nivel": "primaria",
+  "grado": 2,
+  "fase": 3,
+  "campo": "humano",
+  "contenido": "Estilos de vida activos y saludables · Los afectos y su influencia en el bienestar",
+  "pda": [
+    "Practica actividades físicas y juegos que favorecen un estilo de vida activo.",
+    "Identifica sus emociones y las de otras personas, y cómo influyen en su bienestar."
+  ],
+  "ejesArticuladores": [
+    "vida_saludable",
+    "inclusion"
+  ],
+  "objetivo": "Moverme y alimentarme bien, y nombrar lo que siento.",
+  "fuente": "Programa Sintético de la Fase 3 (SEP, 2024)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-2-huma-u1-l1",
+      "titulo": "Cuerpo activo y sano",
+      "orden": 1,
+      "video": null,
+      "texto": "Para crecer sanos necesitamos movernos todos los días: jugar, correr, saltar o bailar. También tomar agua simple, comer frutas y verduras, y dormir bien. Las bebidas azucaradas y la comida chatarra se comen muy poco.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué es mejor tomar cuando tienes sed?",
+          "opciones": [
+            "Refresco",
+            "Agua simple",
+            "Jugo con mucha azúcar",
+            "Nada"
+          ],
+          "correcta": 1,
+          "explicacion": "El agua simple hidrata sin azúcar."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es una actividad física?",
+          "opciones": [
+            "Ver la tele",
+            "Jugar a la cuerda",
+            "Dormir",
+            "Comer"
+          ],
+          "correcta": 1,
+          "explicacion": "Saltar la cuerda mueve todo el cuerpo."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué refrigerio es más saludable?",
+          "opciones": [
+            "Papas fritas",
+            "Pepino con limón",
+            "Dulces",
+            "Pastelitos"
+          ],
+          "correcta": 1,
+          "explicacion": "Las verduras y frutas nos dan energía y vitaminas."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuánto debemos movernos?",
+          "opciones": [
+            "Nunca",
+            "Un ratito todos los días",
+            "Solo en vacaciones",
+            "Una vez al año"
+          ],
+          "correcta": 1,
+          "explicacion": "Movernos todos los días mantiene sano el cuerpo."
+        }
+      ]
+    },
+    {
+      "id": "prim-2-huma-u1-l2",
+      "titulo": "¿Cómo me siento?",
+      "orden": 2,
+      "video": null,
+      "texto": "Todas las personas sentimos alegría, tristeza, enojo, miedo o sorpresa. Las emociones no son malas: nos avisan de algo. Hablar de lo que sentimos con alguien de confianza nos ayuda a sentirnos mejor.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "Tu mejor amigo se mudó lejos. Es normal sentir…",
+          "opciones": [
+            "Tristeza",
+            "Nada",
+            "Hambre",
+            "Sueño"
+          ],
+          "correcta": 0,
+          "explicacion": "Extrañar a alguien produce tristeza, y está bien sentirla."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "Cuando estás enojado, ¿qué puede ayudarte?",
+          "opciones": [
+            "Respirar profundo y hablarlo",
+            "Romper cosas",
+            "Pegarle a alguien",
+            "Gritar insultos"
+          ],
+          "correcta": 0,
+          "explicacion": "Respirar y hablar nos ayuda a calmarnos."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Con quién puedes hablar si algo te preocupa?",
+          "opciones": [
+            "Con una persona adulta de confianza",
+            "Con nadie",
+            "Con un desconocido en internet",
+            "Me lo guardo siempre"
+          ],
+          "correcta": 0,
+          "explicacion": "Una persona adulta de confianza puede ayudarte."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "Ves a un compañero llorando. ¿Qué puedes hacer?",
+          "opciones": [
+            "Preguntarle si necesita ayuda",
+            "Burlarte",
+            "Ignorarlo",
+            "Contarlo a todos"
+          ],
+          "correcta": 0,
+          "explicacion": "Preguntar muestra empatía."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "id": "prim-6-huma-u1",
+  "titulo": "Cambios en mi cuerpo y cuidado de mi salud",
+  "nivel": "primaria",
+  "grado": 6,
+  "fase": 5,
+  "campo": "humano",
+  "contenido": "Educación Integral en Sexualidad · Estilos de vida activos y saludables",
+  "pda": [
+    "Reconoce los cambios físicos y emocionales de la pubertad como parte del crecimiento.",
+    "Identifica situaciones de riesgo (consumo de sustancias, violencia) y formas de autocuidado."
+  ],
+  "ejesArticuladores": [
+    "vida_saludable",
+    "igualdad_genero"
+  ],
+  "objetivo": "Entender los cambios de la pubertad y cuidar mi salud.",
+  "fuente": "Plan de Estudio 2022 · Fase 5 (pendiente de cotejar con el Programa Sintético de la Fase 5)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-6-huma-u1-l1",
+      "titulo": "La pubertad",
+      "orden": 1,
+      "video": null,
+      "texto": "La pubertad es una etapa en la que el cuerpo cambia: crecemos más rápido, aparece vello, cambia la voz, y también cambian nuestras emociones. Cada persona tiene su propio ritmo. Es importante respetar a todas y todos y hablar de estos cambios con personas de confianza.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "La pubertad es…",
+          "opciones": [
+            "Una enfermedad",
+            "Una etapa de cambios del crecimiento",
+            "Algo que solo les pasa a los niños",
+            "Algo de lo que no se habla"
+          ],
+          "correcta": 1,
+          "explicacion": "Es una etapa natural del crecimiento."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Todas las personas cambian al mismo tiempo?",
+          "opciones": [
+            "Sí, el mismo día",
+            "No, cada quien tiene su ritmo",
+            "Solo las niñas cambian",
+            "Nadie cambia"
+          ],
+          "correcta": 1,
+          "explicacion": "Cada cuerpo tiene su propio ritmo."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "Si alguien se burla de los cambios del cuerpo de un compañero…",
+          "opciones": [
+            "Es correcto",
+            "Es una falta de respeto que debemos evitar",
+            "Es gracioso",
+            "No importa"
+          ],
+          "correcta": 1,
+          "explicacion": "Burlarse lastima; todos merecemos respeto."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Con quién puedes resolver dudas sobre tu cuerpo?",
+          "opciones": [
+            "Con una persona adulta de confianza o personal de salud",
+            "Con desconocidos en internet",
+            "Con nadie",
+            "Solo con amigos de tu edad"
+          ],
+          "correcta": 0,
+          "explicacion": "Las personas adultas de confianza y el personal de salud dan información correcta."
+        }
+      ]
+    },
+    {
+      "id": "prim-6-huma-u1-l2",
+      "titulo": "Autocuidado y prevención",
+      "orden": 2,
+      "video": null,
+      "texto": "Cuidarnos es tomar decisiones que protejan nuestra salud: alimentarnos bien, dormir, movernos y decir «no» al alcohol, al tabaco y a otras drogas. También es reconocer cuando algo nos pone en riesgo y pedir ayuda.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "Un amigo te ofrece un cigarro. ¿Qué haces?",
+          "opciones": [
+            "Digo que no y me alejo",
+            "Lo acepto para no quedar mal",
+            "Lo pruebo una vez",
+            "Lo guardo"
+          ],
+          "correcta": 0,
+          "explicacion": "Decir «no» es una forma de autocuidado."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "El alcohol en niñas, niños y adolescentes…",
+          "opciones": [
+            "Daña el cerebro en desarrollo",
+            "Es saludable",
+            "Ayuda a estudiar",
+            "No hace nada"
+          ],
+          "correcta": 0,
+          "explicacion": "El alcohol daña el desarrollo."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es un hábito de autocuidado?",
+          "opciones": [
+            "Dormir lo suficiente",
+            "Desvelarse jugando",
+            "Saltarse comidas",
+            "No tomar agua"
+          ],
+          "correcta": 0,
+          "explicacion": "Dormir bien cuida el cuerpo y la mente."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "Si una situación te pone en riesgo, lo mejor es…",
+          "opciones": [
+            "Pedir ayuda",
+            "Quedarse callado",
+            "Seguir solo",
+            "Avergonzarse"
+          ],
+          "correcta": 0,
+          "explicacion": "Pedir ayuda a tiempo nos protege."
+        }
+      ]
+    }
+  ]
+}

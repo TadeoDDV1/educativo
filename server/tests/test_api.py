@@ -1,12 +1,15 @@
 from __future__ import annotations
 
 import os
+import sys
 import tempfile
 import time
+from pathlib import Path
 
 os.environ.setdefault(
     "DB_PATH", os.path.join(tempfile.mkdtemp(), "pruebas.db")
 )
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from fastapi.testclient import TestClient  # noqa: E402
 
@@ -95,3 +98,28 @@ def test_sincronizar_usuario_nuevo_lo_crea():
 
     estudiantes = cliente.get("/docente/estudiantes").json()
     assert any(item["usuarioId"] == "u-nuevo" for item in estudiantes)
+
+
+def test_manifest_solo_primaria_por_campo_formativo():
+    paquetes = cliente.get("/manifest").json()["paquetes"]
+    campos = {"lenguajes", "saberes", "etica", "humano"}
+    for paquete in paquetes:
+        assert paquete["nivel"] == "primaria"
+        assert 1 <= paquete["grado"] <= 6
+        assert paquete["campo"] in campos
+    for grado in range(1, 7):
+        assert {p["campo"] for p in paquetes if p["grado"] == grado} == campos
+
+
+def test_registro_rechaza_niveles_que_no_son_primaria():
+    for nivel in ("secundaria", "bachillerato"):
+        respuesta = cliente.post(
+            "/auth",
+            json={"nombre": "Prueba", "grado": 2, "nivel": nivel},
+        )
+        assert respuesta.status_code == 422
+
+
+def test_registro_sin_nivel_usa_primaria():
+    respuesta = cliente.post("/auth", json={"nombre": "Prueba", "grado": 1})
+    assert respuesta.status_code == 201

@@ -4,15 +4,18 @@ class Usuario {
     required this.id,
     required this.nombre,
     required this.grado,
-    required this.nivel,
     required this.idioma,
+    this.nivel = 'primaria',
   });
 
   final String id;
   final String nombre;
+
+  /// 1.º a 6.º de primaria.
   final int grado;
 
-  /// primaria | secundaria | bachillerato
+  /// La app es solo para primaria. El campo se conserva porque lo usan
+  /// la base de datos y la API de sincronización.
   final String nivel;
 
   /// es | lengua indígena
@@ -23,7 +26,6 @@ class Usuario {
     id: 'demo-1',
     nombre: 'Estudiante',
     grado: 6,
-    nivel: 'primaria',
     idioma: 'es',
   );
 }

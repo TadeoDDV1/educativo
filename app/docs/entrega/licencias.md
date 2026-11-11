@@ -73,6 +73,17 @@ de imagen y voz firmada por cada persona que aparece. Si un video o audio usa
 material de terceros, debe tener su propia licencia compatible y estar
 acreditado en la ficha de la lección.
 
+### Referentes curriculares
+
+La organización del contenido (fases, Campos formativos, contenidos, PDA y ejes
+articuladores) sigue el Plan de Estudio 2022 y los Programas Sintéticos de las
+Fases 3 y 4 de la Secretaría de Educación Pública (2024), cuya reproducción se
+autoriza para fines no comerciales reconociendo su autoría. Los PDA citados en
+cada unidad son extractos o paráfrasis de esos programas. Las lecciones de
+ortografía son textos originales de SaberMóvil: solo toman como referencia la
+secuencia de temas de una guía comercial de ortografía, sin reproducir su texto
+ni sus ejercicios.
+
 ## 3. Créditos de herramientas y dependencias
 
 | Herramienta | Uso en SaberMóvil | Licencia |

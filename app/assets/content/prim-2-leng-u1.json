@@ -1,0 +1,145 @@
+{
+  "id": "prim-2-leng-u1",
+  "titulo": "Mayúsculas, signos y letras que suenan igual",
+  "nivel": "primaria",
+  "grado": 2,
+  "fase": 3,
+  "campo": "lenguajes",
+  "contenido": "Uso de convenciones de la escritura presentes en la cotidianeidad",
+  "pda": [
+    "Escribe nombres propios iniciando con mayúscula, emplea espacios entre palabras y comienza a usar signos de puntuación.",
+    "Identifica signos que acompañan a las letras (interrogación, exclamación, punto, coma).",
+    "Reconoce letras que pueden relacionarse con sonidos diferentes y sonidos que se escriben con letras distintas (c, s, z, b, v, h, g, j, ll, y)."
+  ],
+  "ejesArticuladores": [
+    "apropiacion_culturas",
+    "pensamiento_critico"
+  ],
+  "objetivo": "Usar mayúsculas y signos, y distinguir letras que suenan parecido.",
+  "fuente": "Programa Sintético de la Fase 3 (SEP, 2024)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-2-leng-u1-l1",
+      "titulo": "Mayúsculas y signos",
+      "orden": 1,
+      "video": null,
+      "texto": "Los nombres propios de personas, pueblos y ríos empiezan con mayúscula: Rosa, Oaxaca, río Papaloapan. Para preguntar usamos ¿ ? y para expresar emoción usamos ¡ !. En español esos signos se abren y se cierran. Al terminar una oración ponemos punto.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál está bien escrito?",
+          "opciones": [
+            "oaxaca",
+            "Oaxaca",
+            "oAXACA",
+            "OaxacA"
+          ],
+          "correcta": 1,
+          "explicacion": "Los nombres de lugares empiezan con mayúscula."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué signos usamos para hacer una pregunta?",
+          "opciones": [
+            "¡ !",
+            "¿ ?",
+            ". ,",
+            "( )"
+          ],
+          "correcta": 1,
+          "explicacion": "Las preguntas se escriben entre ¿ y ?."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¡Qué bonito día! lleva signos de…",
+          "opciones": [
+            "Interrogación",
+            "Exclamación",
+            "Punto final",
+            "Coma"
+          ],
+          "correcta": 1,
+          "explicacion": "¡ ! son signos de exclamación: expresan emoción."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Con qué termina una oración que cuenta algo?",
+          "opciones": [
+            "Con punto",
+            "Con coma",
+            "Sin nada",
+            "Con ¿"
+          ],
+          "correcta": 0,
+          "explicacion": "Las oraciones terminan con punto."
+        }
+      ]
+    },
+    {
+      "id": "prim-2-leng-u1-l2",
+      "titulo": "Letras que suenan igual",
+      "orden": 2,
+      "video": null,
+      "texto": "Algunas letras suenan igual pero se escriben distinto: la b y la v («vaca», «burro»); la s, la z y a veces la c («sopa», «zapato», «cielo»). La h no suena: «huevo», «hielo». Para saber cuál usar, observa cómo está escrita la palabra en libros y carteles.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cómo se escribe correctamente?",
+          "opciones": [
+            "sapato",
+            "zapato",
+            "capato",
+            "zapatto"
+          ],
+          "correcta": 1,
+          "explicacion": "Se escribe zapato, con z."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "El animal que da leche se escribe…",
+          "opciones": [
+            "baca",
+            "vaka",
+            "vaca",
+            "vaça"
+          ],
+          "correcta": 2,
+          "explicacion": "Vaca, con v. (Baca con b es otra palabra)."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué letra no suena en «huevo»?",
+          "opciones": [
+            "u",
+            "h",
+            "v",
+            "o"
+          ],
+          "correcta": 1,
+          "explicacion": "La h no tiene sonido en español."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "Completa: ___ielo (agua congelada)",
+          "opciones": [
+            "y",
+            "h",
+            "ll",
+            "j"
+          ],
+          "correcta": 1,
+          "explicacion": "Se escribe hielo, con h."
+        }
+      ]
+    }
+  ]
+}

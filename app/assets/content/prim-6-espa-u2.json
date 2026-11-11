@@ -1,13 +1,23 @@
 {
   "id": "prim-6-espa-u2",
   "titulo": "Describir y narrar",
-  "materia": "espanol",
-  "grado": 6,
   "nivel": "primaria",
+  "grado": 6,
+  "fase": 5,
+  "campo": "lenguajes",
+  "contenido": "Descripción de personas, lugares, hechos y procesos",
+  "pda": [
+    "Describe y narra usando adjetivos y conectores temporales."
+  ],
+  "ejesArticuladores": [
+    "apropiacion_culturas"
+  ],
   "objetivo": "Describir lugares y personas, y narrar hechos de la comunidad con orden y claridad",
+  "fuente": "Plan de Estudio 2022 · Fase 5 (pendiente de cotejar con el Programa Sintético de la Fase 5)",
+  "estadoValidacion": "borrador",
   "lecciones": [
     {
-      "id": "l1",
+      "id": "prim-6-espa-u2-l1",
       "titulo": "Describir con los cinco sentidos",
       "orden": 1,
       "video": "media/prim-6-espa-u2-l1.mp4",
@@ -21,7 +31,12 @@
           "id": "e1",
           "tipo": "opcion_multiple",
           "pregunta": "Al describir el olor del pan recién hecho, ¿qué sentido usas?",
-          "opciones": ["El olfato", "La vista", "El oído", "El gusto"],
+          "opciones": [
+            "El olfato",
+            "La vista",
+            "El oído",
+            "El gusto"
+          ],
           "correcta": 0,
           "explicacion": "El olfato percibe los olores; por eso describe cómo huele el pan."
         },
@@ -41,7 +56,7 @@
       ]
     },
     {
-      "id": "l2",
+      "id": "prim-6-espa-u2-l2",
       "titulo": "Narrar un hecho de mi comunidad",
       "orden": 2,
       "video": "media/prim-6-espa-u2-l2.mp4",
@@ -55,7 +70,12 @@
           "id": "e3",
           "tipo": "opcion_multiple",
           "pregunta": "¿Qué palabra ayuda a ordenar los hechos de una narración?",
-          "opciones": ["Después", "Quizás", "Muy", "Verde"],
+          "opciones": [
+            "Después",
+            "Quizás",
+            "Muy",
+            "Verde"
+          ],
           "correcta": 0,
           "explicacion": "Después es un conector temporal que indica el orden de los hechos."
         },
@@ -63,7 +83,12 @@
           "id": "e4",
           "tipo": "opcion_multiple",
           "pregunta": "¿En qué tiempo verbal se narran hechos que ya ocurrieron?",
-          "opciones": ["En pasado", "En futuro", "En infinitivo", "En imperativo"],
+          "opciones": [
+            "En pasado",
+            "En futuro",
+            "En infinitivo",
+            "En imperativo"
+          ],
           "correcta": 0,
           "explicacion": "El pasado o pretérito sitúa los hechos antes del momento en que se cuentan."
         }

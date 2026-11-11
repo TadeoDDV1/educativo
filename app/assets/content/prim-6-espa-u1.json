@@ -1,13 +1,24 @@
 {
   "id": "prim-6-espa-u1",
   "titulo": "Leer y contar historias",
-  "materia": "espanol",
-  "grado": 6,
   "nivel": "primaria",
+  "grado": 6,
+  "fase": 5,
+  "campo": "lenguajes",
+  "contenido": "Narración de sucesos del pasado y del presente",
+  "pda": [
+    "Lee y narra historias identificando inicio, desarrollo y desenlace."
+  ],
+  "ejesArticuladores": [
+    "apropiacion_culturas",
+    "artes"
+  ],
   "objetivo": "Identificar las partes de un cuento y escribir uno breve",
+  "fuente": "Plan de Estudio 2022 · Fase 5 (pendiente de cotejar con el Programa Sintético de la Fase 5)",
+  "estadoValidacion": "borrador",
   "lecciones": [
     {
-      "id": "l1",
+      "id": "prim-6-espa-u1-l1",
       "titulo": "Inicio, desarrollo y final",
       "orden": 1,
       "video": "media/prim-6-espa-u1-l1.mp4",
@@ -21,7 +32,12 @@
           "id": "e1",
           "tipo": "opcion_multiple",
           "pregunta": "¿En qué parte del cuento se presentan los personajes?",
-          "opciones": ["Inicio", "Desarrollo", "Final", "Título"],
+          "opciones": [
+            "Inicio",
+            "Desarrollo",
+            "Final",
+            "Título"
+          ],
           "correcta": 0,
           "explicacion": "El inicio sitúa a los personajes y el lugar donde ocurre la historia."
         },
@@ -29,14 +45,19 @@
           "id": "e2",
           "tipo": "opcion_multiple",
           "pregunta": "¿Qué parte resuelve el problema de la historia?",
-          "opciones": ["El inicio", "El desarrollo", "El final", "La portada"],
+          "opciones": [
+            "El inicio",
+            "El desarrollo",
+            "El final",
+            "La portada"
+          ],
           "correcta": 2,
           "explicacion": "El final cierra la historia y resuelve el conflicto."
         }
       ]
     },
     {
-      "id": "l2",
+      "id": "prim-6-espa-u1-l2",
       "titulo": "Escribir un cuento corto",
       "orden": 2,
       "video": "media/prim-6-espa-u1-l2.mp4",

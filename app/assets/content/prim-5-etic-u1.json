@@ -1,0 +1,145 @@
+{
+  "id": "prim-5-etic-u1",
+  "titulo": "Derechos de niñas, niños y adolescentes",
+  "nivel": "primaria",
+  "grado": 5,
+  "fase": 5,
+  "campo": "etica",
+  "contenido": "Los derechos humanos de niñas, niños y adolescentes y su ejercicio en la vida cotidiana",
+  "pda": [
+    "Reconoce sus derechos y las instancias a las que puede acudir para pedir ayuda.",
+    "Identifica situaciones en las que no se respetan los derechos y propone acciones para su ejercicio."
+  ],
+  "ejesArticuladores": [
+    "inclusion",
+    "igualdad_genero",
+    "pensamiento_critico"
+  ],
+  "objetivo": "Conocer mis derechos y saber dónde pedir ayuda.",
+  "fuente": "Plan de Estudio 2022 · Fase 5 (pendiente de cotejar con el Programa Sintético de la Fase 5)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-5-etic-u1-l1",
+      "titulo": "Mis derechos",
+      "orden": 1,
+      "video": null,
+      "texto": "Las niñas, niños y adolescentes tienen derechos: a la educación, a la salud, a jugar, a una vida libre de violencia, a opinar y ser escuchados, y a su identidad, que incluye su nombre, su lengua y su cultura. Los derechos son para todas las personas, sin discriminación.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es un derecho de la niñez?",
+          "opciones": [
+            "Ir a la escuela",
+            "Trabajar en lugar de estudiar",
+            "No tener nombre",
+            "No ser escuchado"
+          ],
+          "correcta": 0,
+          "explicacion": "La educación es un derecho."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "Los derechos son para…",
+          "opciones": [
+            "Solo algunas personas",
+            "Todas las niñas y niños, sin discriminación",
+            "Solo quienes viven en la ciudad",
+            "Solo quienes hablan español"
+          ],
+          "correcta": 1,
+          "explicacion": "Los derechos son universales."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "El derecho a la identidad incluye…",
+          "opciones": [
+            "Nombre, nacionalidad, lengua y cultura",
+            "Tener celular",
+            "Comer dulces",
+            "Ver televisión"
+          ],
+          "correcta": 0,
+          "explicacion": "La identidad incluye nombre, lengua y cultura."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "Opinar en las decisiones que te afectan es…",
+          "opciones": [
+            "Un derecho",
+            "Una falta de respeto",
+            "Prohibido",
+            "Solo para adultos"
+          ],
+          "correcta": 0,
+          "explicacion": "Niñas y niños tienen derecho a opinar y ser escuchados."
+        }
+      ]
+    },
+    {
+      "id": "prim-5-etic-u1-l2",
+      "titulo": "Cuando no se respetan",
+      "orden": 2,
+      "video": null,
+      "texto": "Si una niña o un niño sufre maltrato, abuso o acoso, tiene derecho a ser protegido. Puede contarlo a una persona adulta de confianza, a su maestra o maestro, o pedir ayuda al DIF o a la línea de emergencias 911. Pedir ayuda no es acusar: es cuidarse.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "Si alguien te lastima o te hace sentir incómodo, ¿qué haces?",
+          "opciones": [
+            "Me lo guardo",
+            "Se lo cuento a una persona adulta de confianza",
+            "Me culpo",
+            "Lo olvido"
+          ],
+          "correcta": 1,
+          "explicacion": "Contarlo es el primer paso para recibir protección."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿A qué número puedes llamar en una emergencia en México?",
+          "opciones": [
+            "911",
+            "123",
+            "000",
+            "100"
+          ],
+          "correcta": 0,
+          "explicacion": "El 911 es el número de emergencias."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué institución protege a niñas y niños?",
+          "opciones": [
+            "El DIF",
+            "Una tienda",
+            "Un equipo de fútbol",
+            "Ninguna"
+          ],
+          "correcta": 0,
+          "explicacion": "El Sistema DIF protege los derechos de la niñez."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "Pedir ayuda es…",
+          "opciones": [
+            "Cuidarse y ejercer un derecho",
+            "Ser chismoso",
+            "Algo malo",
+            "Inútil"
+          ],
+          "correcta": 0,
+          "explicacion": "Pedir ayuda es cuidarse."
+        }
+      ]
+    }
+  ]
+}

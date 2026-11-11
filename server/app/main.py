@@ -113,7 +113,8 @@ def bd() -> sqlite3.Connection:
 class RegistroEntrada(BaseModel):
     nombre: str = Field(min_length=1, max_length=80)
     grado: int = Field(ge=1, le=6)
-    nivel: str = Field(pattern="^(primaria|secundaria|bachillerato)$")
+    # Solo educación primaria (Nueva Escuela Mexicana, 1.º a 6.º).
+    nivel: str = Field(default="primaria", pattern="^primaria$")
     idioma: str = "es"
 
 

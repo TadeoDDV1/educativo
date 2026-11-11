@@ -1,0 +1,144 @@
+{
+  "id": "prim-4-etic-u1",
+  "titulo": "México pluricultural",
+  "nivel": "primaria",
+  "grado": 4,
+  "fase": 4,
+  "campo": "etica",
+  "contenido": "Composición sociocultural de la entidad federativa y de México, y su configuración a través de la historia como un país pluricultural",
+  "pda": [
+    "Reconoce que México está integrado por pueblos originarios, afromexicanos, migrantes y diversas comunidades con características y necesidades propias.",
+    "Valora la lucha de los pueblos por el reconocimiento de la igualdad en dignidad y derechos."
+  ],
+  "ejesArticuladores": [
+    "interculturalidad_critica",
+    "inclusion"
+  ],
+  "objetivo": "Valorar la diversidad cultural y lingüística de México.",
+  "fuente": "Programa Sintético de la Fase 4 (SEP, 2024)",
+  "estadoValidacion": "borrador",
+  "lecciones": [
+    {
+      "id": "prim-4-etic-u1-l1",
+      "titulo": "Muchas lenguas, un país",
+      "orden": 1,
+      "video": null,
+      "texto": "En México se hablan 68 lenguas indígenas nacionales, además del español y la lengua de señas mexicana. Entre las más habladas están el náhuatl, el maya, el tseltal, el tsotsil y el mixteco. Todas las lenguas tienen el mismo valor y sus hablantes tienen derecho a usarlas en la escuela y en cualquier lugar.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuántas lenguas indígenas nacionales se reconocen en México?",
+          "opciones": [
+            "10",
+            "32",
+            "68",
+            "200"
+          ],
+          "correcta": 2,
+          "explicacion": "Se reconocen 68 lenguas indígenas nacionales."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la lengua indígena con más hablantes en México?",
+          "opciones": [
+            "Náhuatl",
+            "Inglés",
+            "Francés",
+            "Latín"
+          ],
+          "correcta": 0,
+          "explicacion": "El náhuatl es la lengua indígena más hablada."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "Hablar una lengua indígena es…",
+          "opciones": [
+            "Un derecho y una riqueza",
+            "Algo que se debe ocultar",
+            "Prohibido en la escuela",
+            "Motivo de burla"
+          ],
+          "correcta": 0,
+          "explicacion": "Las lenguas indígenas son patrimonio y un derecho."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál palabra del español viene del náhuatl?",
+          "opciones": [
+            "Chocolate",
+            "Mesa",
+            "Libro",
+            "Puerta"
+          ],
+          "correcta": 0,
+          "explicacion": "Chocolate viene del náhuatl, igual que tomate y aguacate."
+        }
+      ]
+    },
+    {
+      "id": "prim-4-etic-u1-l2",
+      "titulo": "Pueblos que forman México",
+      "orden": 2,
+      "video": null,
+      "texto": "México es un país pluricultural: lo formamos pueblos originarios, comunidades afromexicanas, personas migrantes y muchas otras comunidades. Los pueblos afromexicanos viven, sobre todo, en la Costa Chica de Guerrero y Oaxaca y en Veracruz. La interculturalidad es convivir con respeto y aprender unos de otros.",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "tipo": "opcion_multiple",
+          "pregunta": "Que México sea pluricultural significa que…",
+          "opciones": [
+            "Hay una sola cultura",
+            "Conviven muchas culturas",
+            "Solo se habla español",
+            "Todos somos iguales en costumbres"
+          ],
+          "correcta": 1,
+          "explicacion": "Pluricultural: muchas culturas en un mismo país."
+        },
+        {
+          "id": "e2",
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Dónde viven muchas comunidades afromexicanas?",
+          "opciones": [
+            "En la Costa Chica de Guerrero y Oaxaca",
+            "Solo en el extranjero",
+            "En la Antártida",
+            "En ningún lugar de México"
+          ],
+          "correcta": 0,
+          "explicacion": "La Costa Chica y Veracruz tienen importantes comunidades afromexicanas."
+        },
+        {
+          "id": "e3",
+          "tipo": "opcion_multiple",
+          "pregunta": "La interculturalidad es…",
+          "opciones": [
+            "Convivir con respeto y aprender unos de otros",
+            "Imponer una cultura",
+            "Separar a las personas",
+            "Olvidar las tradiciones"
+          ],
+          "correcta": 0,
+          "explicacion": "Es el diálogo respetuoso entre culturas."
+        },
+        {
+          "id": "e4",
+          "tipo": "opcion_multiple",
+          "pregunta": "Una familia llega a tu comunidad desde otro país. ¿Qué derechos tiene?",
+          "opciones": [
+            "Ninguno",
+            "Los mismos derechos humanos que todas las personas",
+            "Solo trabajar",
+            "Solo si habla español"
+          ],
+          "correcta": 1,
+          "explicacion": "Los derechos humanos son para todas las personas."
+        }
+      ]
+    }
+  ]
+}

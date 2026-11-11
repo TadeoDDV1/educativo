@@ -308,7 +308,7 @@
             <tr>
               <th scope="col">Nombre</th>
               <th scope="col">Grado</th>
-              <th scope="col">Nivel</th>
+              <th scope="col">Fase NEM</th>
               <th scope="col">Lecciones</th>
               <th scope="col">Aciertos</th>
               <th scope="col">% de acierto</th>
@@ -326,6 +326,12 @@
   </div>
 
   <script>
+    // Nueva Escuela Mexicana: Fase 3 (1.º-2.º), Fase 4 (3.º-4.º), Fase 5 (5.º-6.º).
+    function faseDeGrado(grado) {
+      if (!grado) return "—";
+      return "Fase " + (grado <= 2 ? 3 : grado <= 4 ? 4 : 5);
+    }
+
     (function () {
       "use strict";
 
@@ -374,7 +380,7 @@
 
           fila.appendChild(celda(estudiante.nombre || "Sin nombre", "nombre"));
           fila.appendChild(celda(String(estudiante.grado) + "º"));
-          fila.appendChild(celda(estudiante.nivel || "—", "nivel"));
+          fila.appendChild(celda(faseDeGrado(estudiante.grado), "nivel"));
           fila.appendChild(celda(String(estudiante.lecciones)));
           fila.appendChild(celda(String(estudiante.aciertos)));
           fila.appendChild(

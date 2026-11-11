@@ -1,4 +1,27 @@
-# Contrato de datos — v1 (borrador congelado)
+# Contrato de datos — v2 (primaria · Nueva Escuela Mexicana)
+
+> **v2:** la app es solo de **primaria (1.º a 6.º)** y el contenido se organiza por
+> **Campo formativo** en lugar de materia. Cambios respecto a v1:
+>
+> - `manifest.json` sube a `version: 2` y cada paquete agrega `fase` y `campo`.
+> - Cada unidad agrega `fase`, `campo`, `contenido`, `pda` (lista),
+>   `ejesArticuladores` (lista de claves), `fuente` y `estadoValidacion`.
+> - `campo` ∈ `lenguajes | saberes | etica | humano`.
+> - `fase` = 3 (1.º–2.º), 4 (3.º–4.º) o 5 (5.º–6.º).
+> - Claves de ejes: `inclusion`, `pensamiento_critico`, `interculturalidad_critica`,
+>   `igualdad_genero`, `vida_saludable`, `apropiacion_culturas`, `artes`.
+> - Los `id` de lección son **únicos en toda la app**: `<idUnidad>-l<n>`
+>   (en v1 todas las unidades usaban `l1`, `l2` y el progreso se mezclaba).
+> - `nivel` siempre es `"primaria"` (app, SQLite y API).
+> - Compatibilidad: si un JSON v1 trae `materia` y no `campo`, la app lo traduce
+>   (`espanol` → `lenguajes`; `matematicas`/`ciencias` → `saberes`).
+>
+> Ejemplo de unidad v2: `app/assets/content/prim-3-leng-u1.json`.
+> Mapa curricular: `app/docs/contenido/mapa-curricular-nem.md`.
+
+---
+
+## Historial: v1
 
 Dueño: **Sección A**. Consumidores: **Sección B** (JSON de contenido) y **Sección C** (UI).
 

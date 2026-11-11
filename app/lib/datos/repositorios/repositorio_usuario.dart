@@ -23,11 +23,14 @@ class RepositorioUsuario {
     // Sin nombre no hay usuario válido: la app debe mostrar la bienvenida.
     if (nombre == null || nombre.trim().isEmpty) return null;
 
+    // La app es solo de primaria: si quedó guardado un perfil antiguo de
+    // secundaria o bachillerato, se ajusta a un grado válido (1.º a 6.º).
+    final grado = (preferencias.getInt(_claveGrado) ?? 1).clamp(1, 6);
+
     return Usuario(
       id: preferencias.getString(_claveId) ?? 'demo-1',
       nombre: nombre,
-      grado: preferencias.getInt(_claveGrado) ?? 1,
-      nivel: preferencias.getString(_claveNivel) ?? 'primaria',
+      grado: grado,
       idioma: preferencias.getString(_claveIdioma) ?? 'es',
     );
   }
@@ -37,8 +40,8 @@ class RepositorioUsuario {
     final preferencias = await SharedPreferences.getInstance();
     await preferencias.setString(_claveId, usuario.id);
     await preferencias.setString(_claveNombre, usuario.nombre);
-    await preferencias.setInt(_claveGrado, usuario.grado);
-    await preferencias.setString(_claveNivel, usuario.nivel);
+    await preferencias.setInt(_claveGrado, usuario.grado.clamp(1, 6));
+    await preferencias.setString(_claveNivel, 'primaria');
     await preferencias.setString(_claveIdioma, usuario.idioma);
   }
 

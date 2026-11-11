@@ -117,6 +117,39 @@ EstiloMateria estiloDeMateria(String materia) {
   }
 }
 
+/// Color, emoji y nombre corto de cada Campo formativo de la Nueva Escuela
+/// Mexicana. Si recibe una materia del contenido anterior, usa su estilo.
+EstiloMateria estiloDeCampo(String campo) {
+  switch (campo) {
+    case 'lenguajes':
+      return const EstiloMateria(
+        paleta: paletaRoja,
+        emoji: '📖',
+        nombre: 'Lenguajes',
+      );
+    case 'saberes':
+      return const EstiloMateria(
+        paleta: paletaAzul,
+        emoji: '🔬',
+        nombre: 'Saberes',
+      );
+    case 'etica':
+      return const EstiloMateria(
+        paleta: paletaVerde,
+        emoji: '🌎',
+        nombre: 'Ética',
+      );
+    case 'humano':
+      return const EstiloMateria(
+        paleta: paletaAmarilla,
+        emoji: '🤝',
+        nombre: 'Comunidad',
+      );
+    default:
+      return estiloDeMateria(campo);
+  }
+}
+
 /// Sombra suave y de color para las tarjetas.
 List<BoxShadow> sombraTarjeta([Color color = colorTinta]) => [
   BoxShadow(

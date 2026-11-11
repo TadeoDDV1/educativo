@@ -10,21 +10,28 @@ import '../modelos/modelos.dart';
 class RepositorioContenido {
   const RepositorioContenido();
 
-  /// Lee el manifest y devuelve la lista de unidades disponibles.
-  Future<List<Unidad>> cargarUnidades() async {
-    final textoManifest = await rootBundle.loadString(
-      'assets/content/manifest.json',
-    );
+  static const String _rutaManifest = 'assets/content/manifest.json';
+
+  /// Lee el manifest y devuelve los paquetes disponibles.
+  Future<List<PaqueteContenido>> cargarPaquetes() async {
+    final textoManifest = await rootBundle.loadString(_rutaManifest);
     final manifest = jsonDecode(textoManifest) as Map<String, dynamic>;
-    final paquetes = (manifest['paquetes'] as List<dynamic>)
+    return (manifest['paquetes'] as List<dynamic>)
         .map((item) => PaqueteContenido.fromJson(item as Map<String, dynamic>))
         .toList();
+  }
 
-    final unidades = <Unidad>[];
-    for (final paquete in paquetes) {
-      unidades.add(await cargarUnidad(paquete));
-    }
-    return unidades;
+  /// Devuelve todas las unidades de primaria (1.º a 6.º).
+  Future<List<Unidad>> cargarUnidades() async {
+    final paquetes = await cargarPaquetes();
+    return _cargarVarias(paquetes);
+  }
+
+  /// Devuelve solo las unidades de un grado. Lee únicamente los archivos
+  /// de ese grado para no cargar todo el contenido en memoria.
+  Future<List<Unidad>> cargarUnidadesDeGrado(int grado) async {
+    final paquetes = await cargarPaquetes();
+    return _cargarVarias(paquetes.where((p) => p.grado == grado).toList());
   }
 
   /// Lee un archivo de unidad y lo convierte en un objeto Unidad.
@@ -32,5 +39,13 @@ class RepositorioContenido {
     final texto = await rootBundle.loadString(paquete.archivo);
     final json = jsonDecode(texto) as Map<String, dynamic>;
     return Unidad.fromJson(json);
+  }
+
+  Future<List<Unidad>> _cargarVarias(List<PaqueteContenido> paquetes) async {
+    final unidades = <Unidad>[];
+    for (final paquete in paquetes) {
+      unidades.add(await cargarUnidad(paquete));
+    }
+    return unidades;
   }
 }

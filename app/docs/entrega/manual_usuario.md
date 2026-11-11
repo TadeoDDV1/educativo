@@ -32,7 +32,8 @@ enviar tu avance.
 
 1. Abre SaberMóvil y toca **Continuar**.
 2. Escribe tu **nombre** y toca **Continuar**.
-3. Elige tu **nivel** (Primaria, Secundaria o Bachillerato), tu **grado** y tu
+3. Elige tu **grado de primaria** (1.º a 6.º; la app te dice a qué fase de la
+   Nueva Escuela Mexicana pertenece) y tu
    **idioma**.
 4. Toca **Guardar**. Verás la pantalla **Mi ruta de aprendizaje**.
 
@@ -49,7 +50,10 @@ la app guarda tus datos en el dispositivo.
 
 ## 5. Completar una lección
 
-1. En **Aprender**, elige una unidad, por ejemplo **Fracciones**.
+1. En **Aprender** verás las unidades de tu grado agrupadas por Campo formativo
+   (Lenguajes, Saberes, Ética y Comunidad). Usa los botones de arriba para ver un
+   solo campo y toca **¿Qué voy a aprender?** para conocer el contenido y los
+   aprendizajes de la unidad. Elige una lección abierta de cualquier unidad.
 2. Toca una lección disponible. Las lecciones bloqueadas se abren cuando
    terminas la anterior.
 3. Lee el texto y mira el video.
