@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 import '../datos/modelos/unidad.dart';
 
 /// Estructura curricular de la Nueva Escuela Mexicana (Plan de Estudio 2022)
@@ -28,52 +26,41 @@ class Nem {
       '$grado.º de primaria · Fase ${faseDeGrado(grado)}';
 }
 
-/// Uno de los cuatro Campos formativos.
+/// Uno de los cuatro Campos formativos. Sus colores y emoji están en
+/// `estiloDeCampo` (nucleo/tema/tema_app.dart).
 class CampoFormativo {
   const CampoFormativo({
     required this.id,
     required this.nombre,
     required this.nombreCorto,
-    required this.icono,
-    required this.color,
   });
 
   final String id;
   final String nombre;
   final String nombreCorto;
-  final IconData icono;
-  final Color color;
 
   static const CampoFormativo lenguajes = CampoFormativo(
     id: 'lenguajes',
     nombre: 'Lenguajes',
     nombreCorto: 'Lenguajes',
-    icono: Icons.menu_book,
-    color: Color(0xFF8E3B9E),
   );
 
   static const CampoFormativo saberes = CampoFormativo(
     id: 'saberes',
     nombre: 'Saberes y Pensamiento Científico',
     nombreCorto: 'Saberes',
-    icono: Icons.science_outlined,
-    color: Color(0xFF1565C0),
   );
 
   static const CampoFormativo etica = CampoFormativo(
     id: 'etica',
     nombre: 'Ética, Naturaleza y Sociedades',
     nombreCorto: 'Ética',
-    icono: Icons.public,
-    color: Color(0xFF2E7D32),
   );
 
   static const CampoFormativo humano = CampoFormativo(
     id: 'humano',
     nombre: 'De lo Humano y lo Comunitario',
     nombreCorto: 'Comunidad',
-    icono: Icons.diversity_3,
-    color: Color(0xFFD84315),
   );
 
   /// En el orden en que los presenta el Plan de Estudio.

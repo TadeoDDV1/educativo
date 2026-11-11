@@ -19,3 +19,6 @@ server/__pycache__/
 server/**/__pycache__/
 server/datos.db
 .pytest_cache/
+
+# Sesiones temporales del compilador de Kotlin
+app/android/.kotlin/

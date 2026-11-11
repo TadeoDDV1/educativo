@@ -5,6 +5,7 @@ import 'nucleo/servicios.dart';
 import 'nucleo/tema/tema_app.dart';
 import 'pantallas/inicio/pantalla_inicio.dart';
 import 'pantallas/onboarding/pantalla_bienvenida.dart';
+import 'widgets/logo_bloques.dart';
 
 /// Punto de entrada de la interfaz.
 /// Configura la app y decide si mostrar la bienvenida o el inicio.
@@ -46,6 +47,24 @@ class _PantallaCargando extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Center(child: CircularProgressIndicator()));
+    return const Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            LogoBloques(tamano: 96),
+            SizedBox(height: 28),
+            SizedBox(
+              width: 34,
+              height: 34,
+              child: CircularProgressIndicator(
+                strokeWidth: 4,
+                strokeCap: StrokeCap.round,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
