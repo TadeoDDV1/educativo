@@ -1,0 +1,39 @@
+name: Vista previa web
+
+# Compila la app como página web para poder verla y grabarla sin
+# instalar Flutter. Se ejecuta a mano o al subir esta rama.
+on:
+  workflow_dispatch:
+  push:
+    branches: [ci/web-preview]
+
+jobs:
+  web:
+    name: Compilar web
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Habilitar plataforma web si falta
+        run: |
+          if [ ! -d web ]; then flutter create --platforms=web --project-name sabermovil .; fi
+
+      - name: Dependencias
+        run: flutter pub get
+
+      - name: Compilar web
+        run: flutter build web --release --no-web-resources-cdn
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sabermovil-web
+          path: app/build/web
+          retention-days: 7
